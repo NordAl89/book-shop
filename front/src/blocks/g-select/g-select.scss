@@ -27,7 +27,7 @@
 	align-items: center;
 	padding: 0 17px;
 	height: 44px;
-	width: rem(354);
+	// width: rem(354);
 	cursor: pointer;
 	border: 1px solid rgba(103, 115, 135, 0.7);
 	outline-offset: 0px;
@@ -36,8 +36,8 @@
 }
 .g-select__selected-name
 {
-	font-size: rem(13);
-	line-height: rem(17);
+	// font-size: rem(13);
+	// line-height: rem(17);
 	font-weight: $regular;
 	color: #677387;
 }
@@ -76,8 +76,8 @@
 }
 .g-select__item
 {
-	font-size: rem(13);
-	line-height: rem(17);
+	// font-size: rem(13);
+	// line-height: rem(17);
 	font-weight: $regular;
 	padding-left: 17px;
 	padding-top: 11px;

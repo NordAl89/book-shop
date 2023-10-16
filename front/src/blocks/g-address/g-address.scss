@@ -1,0 +1,23 @@
+.g-address {
+	display: flex;
+	font-family: 'Roboto-medium';
+	font-size: 14px;
+	letter-spacing: .9px;
+}
+
+.g-address__link {
+	display: flex;
+	align-items: center;
+	
+}
+.g-address__link:not(:last-child) {
+	margin-right: 2.2vw;
+}
+.g-address__image {
+	margin-right: 5px;
+}
+
+.g-address__image--margin {
+	margin: 0;
+	margin-left: 5px;
+}

@@ -1,0 +1,21 @@
+.g-navigation__list {
+	display: flex;
+	font-family: 'Roboto-regular';
+	font-size: 14px;
+	
+}
+
+.g-navigation__item:not(:last-child) {
+	margin-right: 2.5vw;
+}
+
+.g-navigation__link {
+	display: flex;
+	justify-items: center;
+	letter-spacing: 0.6px;
+	color: #1C294D;
+}
+
+.g-navigation__image {
+	margin-right: 0.4vw;
+}

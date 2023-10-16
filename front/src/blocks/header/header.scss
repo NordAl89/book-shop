@@ -1,6 +1,22 @@
-body{
+/* body{
 	background: red;
 }
-.header__paragraph-temp {
-	color: red;
-}
+ */
+
+ .header {
+	
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 170px;
+	background-color: rgb(187, 230, 230);
+ }
+
+ .header__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3.7vw;
+	margin-bottom: 20px;
+	
+ }
+ 

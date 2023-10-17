@@ -1,6 +1,6 @@
-.footer {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+.footer 
+{
+	min-width: $hd1366;
 	height: 455px;
 	background-color: antiquewhite;
 }

@@ -1,16 +1,163 @@
 <header class="header">
+	<div class="header__top">
+    	<div class="container">
+			<div class="header__wrapper">
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							{% include '@assets/svg/location.svg' %}
+							<span class="navigation__text">
+								Москва
+							</span>
+
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							{% include '@assets/svg/shipping.svg' %}
+							<span class="navigation__text">
+								Доставка и оплата
+							</span>
+
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							{% include '@assets/svg/address-hours.svg' %}
+							<span class="navigation__text">
+								Адрес и часы работы
+							</span>
+
+						</a>
+					</li>
+				</ul>
+
+			</nav>
+
+			<address class="address">
+				<a class="address__link" href="mailto:market@estatut.ru">
+					{% include '@assets/svg/mail.svg' %}
+					<span class="address__text">
+						market@estatut.ru
+					</span>
+
+				</a>
+				<a class="address__link" href="tel:+79686606550">
+					{% include '@assets/svg/phone.svg' %}
+					<span class="address__text">
+						8 (968) 660-65-50
+					</span>
+
+					{% include '@assets/svg/notification-i.svg' %}
+				</a>
+
+			</address>
+			</div>
+		</div>
+		</div>
 	<div class="container">
-	
-		<div class=header__top>
-		{% include '@blocks/g-navigation/g-navigation.twig' %}
-		{% include '@blocks/g-address/g-address.twig' %}
-		</div>
-		<div class=header__middle>
-		<img src='./img/header/logo-statut.png'>
-			<div class="temp-form-search"></div>
-			{% include '@blocks/g-navigation/g-navigation.twig' %}
-		</div>
-		<div class=header__bottom>Bottom</div>
+
 		
+		<div class="header__middle">
+			{% include '@assets/svg/statut-logo.svg' %}
+			<form class='form' action="">
+				<input class='form__input' type="text" placeholder=''>
+				<button class='form__button'>
+					{% include '@assets/svg/magnifire.svg' %}
+					Искать</button>
+			</form>
+
+			<nav class="navigation navigation--header-middle">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							{% include '@assets/svg/defer-goods.svg' %}
+							<span class="navigation__text">
+								Отложено
+							</span>
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							{% include '@assets/svg/customer.svg' %}
+							<span class="navigation__text">
+								Войти
+							</span>
+						</a>
+					</li>
+
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							<div class="shop-cart-counter">
+								<span class='shop-cart-counter__amount'>10</span>
+								{% include '@assets/svg/shop-cart.svg' %}
+							</div>
+
+							<span class="navigation__text">
+								Корзина
+							</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__bottom">
+		{% include '@assets/svg/burger-catalog.svg' %}
+			<nav class="navigation ">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							
+							<span class="navigation__text">
+								Каталог
+							</span>
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							
+							<span class="navigation__text">
+								Авторы
+							</span>
+						</a>
+					</li>
+
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							
+							<span class="navigation__text">
+								Новинки
+							</span>
+						</a>
+					</li>
+					<li class="navigation__item navigation__item--decor">
+						<a class="navigation__link" href="#">
+							{% include '@assets/svg/discount.svg' %}
+							<span class="navigation__text">
+								Скидки
+							</span>
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							
+							<span class="navigation__text">
+								Партнёрам
+							</span>
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">
+							
+							<span class="navigation__text">
+								Мы
+							</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
 	</div>
 </header>

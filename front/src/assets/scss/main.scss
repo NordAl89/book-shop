@@ -14,9 +14,7 @@
 @import '@b/g-checkbox/g-checkbox.scss';
 @import '@b/g-button/g-button.scss';
 @import '@b/g-radio/g-radio.scss';
-@import '@b/g-navigation/g-navigation.scss';
-@import '@b/g-address/g-address.scss';
-
+@import '@b/index-content/index-content.scss';
 @import '@b/header/header.scss';
 @import '@b/footer/footer.scss';
 /* @import 'blocks/component/component'; */
@@ -48,6 +46,7 @@ html
 }
 body
 {
+	background: #F9F9FA;
 	// background-image: url(#{$img}/logo.png);
 	// background-repeat: no-repeat;
 }

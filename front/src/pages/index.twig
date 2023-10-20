@@ -2,14 +2,34 @@
 
 {% block page %}
 	<div class="container">
-		<p>В самом начале - расписываем все компоненты, придумываем названия</p>
-		<p>Пример подключения картинки</p>
-		<img src="./img/logo.png" alt="Logo" width="57px">
+		<main>
+			<section class="hero">
+				<div class="slider">
+				<img src="./img/slider-temp.png" alt="" class="slider-temp">
+				</div>
+				<article class="day-book">
+				<h3 class="day-book__title-h3">Книга дня</h3>
+				<img src="./img/oleg-roy.png" alt="книга три ступени вверх" class="day-book__oleg-roy" width=167>
+				<h4 class="day-book__title-h4">
+				Корпоративное право
+				</h4>
+				<p class="day-book__paragraph">
+				<strong>
+				Инвестирование: способы, риски, субъекты : монография
+				</strong>
+				
+				</p>
+				</article>
+			</section>
+
+		</main>
+
 	</div>
 	{#
-		Пример подключения файла
-		{% include '@blocks/component/component.twig' %}
-		Пример подключения svg
-		{% include '@assets/svg/component.svg' %}
-	#}
+			Пример подключения файла
+			{% include '@blocks/component/component.twig' %}
+			Пример подключения svg
+			{% include '@assets/svg/component.svg' %}
+			<img src="./img/logo.png" alt="Logo" width="57px">
+		#}
 {% endblock %}

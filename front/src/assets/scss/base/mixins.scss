@@ -12,7 +12,7 @@
 //         padding: 0 40px;
 //     }
 // }
-@mixin mq($from, $to: false) {
+/* @mixin mq($from, $to: false) {
     @if $to {
         @media (min-width: $from + 0px) and (max-width: $to + 0px) {
             @content;
@@ -24,4 +24,26 @@
             @content;
         }
     }
+} */
+@mixin mq($from, $to: false) {
+    @if $to {
+        @media (min-width: $from) and (max-width: $to) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: $from) {
+            @content;
+        }
+    }
 }
+
+
+
+// ================= NordAl mixins =============
+/* @mixin tablet {
+	@media(max-width: 768px) {
+		@content;
+	}
+} */

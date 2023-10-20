@@ -39,14 +39,23 @@
 }
 html
 {
+	
 	line-height: $mainLineHeight;
 	font-size: $mainFontSize;
 	color: $mainFontColor;
 	-webkit-font-smoothing: antialiased;
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: $regular;
 }
 body
 {
-	background: #F9F9FA;
+	
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: inherit;
+	color: $mainFontColor;
+	background-color: $page-bg-color;
 	// background-image: url(#{$img}/logo.png);
 	// background-repeat: no-repeat;
 }

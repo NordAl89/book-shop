@@ -1,15 +1,16 @@
 .container
 {
-	max-width: 1140px;
-	width: 100%;
+	// max-width: 1140px;
+	width: 83.46vw;
+	
 	margin: 0 auto;
 	position: relative;
 	padding: 0;
-	// background-color: rgb(211, 206, 198);
-	@include mq(768px)
-	{
-		padding: 0;
-	}
+	background-color: rgb(231, 212, 215);
+	@include mq(768px, 1024px)
+			{
+				width: 92vw;
+			}
 } 
 
 

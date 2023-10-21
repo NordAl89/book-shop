@@ -16,8 +16,7 @@
  .header__top 
  {	
 	display: flex;
-	align-items: center;
-	// min-height: 3.7vw;
+	align-items: center;	
 	margin-bottom: 14px;
 	background-color: $base-first;
 	border-bottom: 2px solid $page-bg-color;
@@ -32,10 +31,11 @@
 	align-items: center;	
 	
 	
-	/* @include mq(375px, 1024px)
+	@include mq(768px, 1024px)
 			{
-				display: block;
-			} */
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+			}
  }
 
 // ============== Navigation ==================
@@ -123,10 +123,17 @@
 {
 	display: flex;
 	align-items: center;
-	/* @include mq(375px, 1024px)
-			{
-				display: block;
-			} */
+	
+	@include mq(768px, 1024px)
+		{
+			
+			flex-direction: column;
+			
+		}
+}
+
+.tablet-burger-catalog {
+	display: none;
 }
 
 .header__logo-form-wrapper {
@@ -192,6 +199,10 @@
 {
 	margin-left: auto;
 	color: #1C294D;
+	@include mq(768px, 1024px) 
+		{
+			margin: 0 auto;
+		}
 }
 
 .shop-cart-counter 
@@ -246,11 +257,10 @@
 		font-weight: 400;
 		line-height: 20px;			
 	}
-	/* .navigation__item:nth-child(4) .navigation__link
-	{
-		color: red;
-		margin-left: 5px;
-	} */
+	
+	@include mq(768px, 1024px) {
+		justify-content: center;
+	}
 }
 
 .navigation__item--decor .navigation__link 

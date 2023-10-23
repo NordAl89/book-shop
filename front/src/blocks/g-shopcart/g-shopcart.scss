@@ -1,0 +1,30 @@
+.g-shopcart 
+{
+	display: flex;
+	position: relative;
+}
+
+.g-shopcart__counter 
+{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: -7px;
+  	right: -5px;
+	background-color: $orange-base;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	
+	text-align: center;
+	color: #FFF;
+
+	text-align: center;
+	font-family: Roboto;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+}

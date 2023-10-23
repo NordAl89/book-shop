@@ -21,7 +21,12 @@
 	background-color: $base-first;
 	border-bottom: 2px solid $page-bg-color;
 	
-	
+	@include mq(0, 768px)
+		{
+			
+			display: none;
+			
+		}
  }
 
  .header__wrapper 
@@ -130,15 +135,71 @@
 			flex-direction: column;
 			
 		}
+	
 }
 
-.tablet-burger-catalog {
+.tablet-screen {
 	display: none;
+
+	@include mq(0, 768px)
+		{
+			
+			display: block;
+			
+		}
 }
 
-.header__logo-form-wrapper {
+.tablet-screen-burger {
+	& svg {
+		margin: 0 15px 0 0;
+	}
+}
+
+.tablet-screen-shopcart {
+	margin-left: 16px;
+	
+	& .g-shopcart svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	@include mq(0, 768px)
+		{
+			
+			.g-shopcart__counter 
+			{
+				width: 20px;
+				height: 20px;
+				top: -12px;
+				right: -10px;
+				font-size: 12px;
+				font-weight: $medium;
+			}
+			
+		}
+}
+
+.tablet-screen-logo {
+	svg {
+		width: 44px;
+	}
+
+}
+
+.header__logo-form-wrapper 
+{
 	display: flex;
+	align-items: center;
 	width: 57.4%;
+
+	@include mq(0, 768px)
+		{
+			width: 100%;
+			justify-content: space-between;
+			padding: 15px 10px 7px 10px;
+
+			
+		}
 }
 .form 
 {
@@ -149,6 +210,12 @@
 	margin-left: 36px;
 	overflow: hidden;
 	border: 2px solid $page-bg-color;
+
+	@include mq(0, 768px){
+		margin-left: 20px;
+		padding-bottom: 8px;
+		background-color: #F7F7F7;
+	}
 	
 }
 
@@ -168,6 +235,15 @@
 	font-weight: 400;
 	line-height: 20px;
 	letter-spacing: .4px;
+
+	@include mq(0, 768px)
+	{
+		margin-right: 7px;	
+		padding-left: 12px;	
+		background-color: #F7F7F7;
+		letter-spacing: .8px;
+	}
+	
 	
 }
 
@@ -193,6 +269,17 @@
 	{
 		margin-right: .73vw;
 	}
+
+	@include mq(0, 768px){
+		font-size: 0;
+		background-color: transparent;
+		width: fit-content;
+
+		& svg path {
+			fill: #1C294D;
+			fill-opacity: 0.5;
+		}
+	}
 }
 
 .navigation--header-middle 
@@ -203,38 +290,14 @@
 		{
 			margin: 0 auto;
 		}
+
+		@include mq(0, 768px)
+		{
+			display: none;
+			
+		}
 }
 
-.shop-cart-counter 
-{
-	display: flex;
-	position: relative;
-}
-
-.shop-cart-counter__amount 
-{
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: -8px;
-  	right: -8px;
-	background-color: $orange-base;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	
-	text-align: center;
-	color: #FFF;
-
-	text-align: center;
-	font-family: Roboto;
-	font-size: 9px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-
-}
 
 // ========= Header bottom =========
 
@@ -261,6 +324,12 @@
 	@include mq(768px, 1024px) {
 		justify-content: center;
 	}
+
+	@include mq(0, 768px)
+		{
+			display: none;
+			
+		}
 }
 
 .navigation__item--decor .navigation__link 

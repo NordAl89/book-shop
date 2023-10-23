@@ -8,7 +8,7 @@
 							<a class="navigation__link" href="#">
 								{% include '@assets/svg/location.svg' %}
 								<span class="navigation__text">
-									Москва-Capital
+									Москва
 								</span>
 
 							</a>
@@ -61,20 +61,27 @@
 		
 		<div class="header__middle">
 			<div class="header__logo-form-wrapper">
-				<div class="tablet-burger-catalog">
+				<div class="tablet-screen tablet-screen-burger">
 					{% include '@assets/svg/burger-catalog.svg' %}
 				</div>
-					{% include '@assets/svg/statut-logo.svg' %}
+					<div class="tablet-screen-logo">
+						{% include '@assets/svg/statut-logo.svg' %}
+					</div>
+					
 				<form class='form' action="">
-					<input class='form__input' type="text" placeholder=''>
-					<button class='form__button'>
+					<input class='form__input _inputHeader' type="text" placeholder='Автор, название, ISBN'>
+					<button 
+					
+					class='form__button'>
 						{% include '@assets/svg/magnifire.svg' %}
 						Искать</button>
+						
 				</form>
+				<div class='tablet-screen tablet-screen-shopcart'>
+					{% include '@blocks/g-shopcart/g-shopcart.twig' %}
 			</div>
-			<div class="tablet-shop-cart">
-			{% include '@assets/svg/shop-cart.svg' %}
 			</div>
+			
 
 			<nav class="navigation navigation--header-middle">
 				<ul class="navigation__list">
@@ -97,10 +104,8 @@
 
 					<li class="navigation__item">
 						<a class="navigation__link" href="#">
-							<div class="shop-cart-counter">
-								<span class='shop-cart-counter__amount'>10</span>
-								{% include '@assets/svg/shop-cart.svg' %}
-							</div>
+							
+							{% include '@blocks/g-shopcart/g-shopcart.twig' %}
 
 							<span class="navigation__text">
 								Корзина

@@ -2,27 +2,44 @@
 
 {% block page %}
 	<div class="container">
-		{# <main>
+		 <main>
 			<section class="hero">
 				<div class="slider">
-				<img src="./img/slider-temp.png" alt="" class="slider-temp">
+					<img src="./img/slider-temp.png" alt="" 	class="slider-temp">
 				</div>
 				<article class="day-book">
+				<div class="day-book__wrapper-top">
 				<h3 class="day-book__title-h3">Книга дня</h3>
-				<img src="./img/oleg-roy.png" alt="книга три ступени вверх" class="day-book__oleg-roy" width=167>
-				<h4 class="day-book__title-h4">
-				Корпоративное право
-				</h4>
-				<p class="day-book__paragraph">
-				<strong>
-				Инвестирование: способы, риски, субъекты : монография
-				</strong>
-				
-				</p>
+					<span class="day-book__time-counter">08:56:31</span>
+				</div> 
+					
+					<img src="./img/oleg-roy.png" alt="книга три ступени вверх" class="day-book__oleg-roy" width=167>
+					<h4 class="day-book__title-h4">
+					Корпоративное право
+					</h4>
+					<p class="day-book__paragraph">
+					<strong>
+					Инвестирование: способы, риски, субъекты : монография
+					</strong>					
+					</p>
+					<span class="day-book__author">
+					Майфат А.В.
+					</span>
+					<p class="day-book__price">
+					4&nbsp;450&nbsp;₽
+					</p>
+					<div class="day-book__wrapper-bottom">
+					<button class="day-book__btn">
+					{% include "@assets/svg/shop-cart.svg" %}
+					В корзину</button>
+					<button class="day-book__defer">
+					{% include "@assets/svg/defer-goods.svg" %}
+					</button>
+					</div>
 				</article>
 			</section>
 
-		</main> #}
+		</main> 
 
 	</div>
 	{#

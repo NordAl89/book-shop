@@ -1,0 +1,26 @@
+.g-btn-shopcart
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 146px;
+	height: 40px;
+	flex-shrink: 0;
+	margin-right: 10px;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	background: $base-first;
+	color: #1C294D;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 15px; 
+
+	& svg 
+	{
+		margin-right: 10px;
+
+		& path {fill: $base-second;}
+	}
+}

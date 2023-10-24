@@ -110,7 +110,7 @@
 @font-face 
 {
 	font-family: 'Roboto';
-	src: url(#{$fonts}/roboto/Roboto-regular.woff2) format('worr2'), local('Roboto-regular');
+	src: url(#{$fonts}/roboto/Roboto-regular.woff2) format('woff2'), local('Roboto-regular');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -118,8 +118,18 @@
 @font-face 
 {
 	font-family: 'Roboto';
-	src: url(#{$fonts}/roboto/Roboto-medium.woff2) format('worr2'), local('Roboto-medium');
+	src: url(#{$fonts}/roboto/Roboto-medium.woff2) format('woff2'), local('Roboto-medium');
 	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+// ===================== Gosha ==================
+@font-face 
+{
+	font-family: 'Gosha Sans';
+	src: url(#{$fonts}/gosha/GoshaSans-Regular.woff2) format('woff2'), local('Gosha-Sans-Regular');
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }

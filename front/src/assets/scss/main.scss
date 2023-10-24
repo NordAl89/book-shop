@@ -13,17 +13,21 @@
 @import '@b/g-input/g-input.scss';
 @import '@b/g-checkbox/g-checkbox.scss';
 @import '@b/g-button/g-button.scss';
+@import '@b/g-btn-shopcart/g-btn-shopcart.scss';
+@import '@b/g-btn-defer/g-btn-defer.scss';
 @import '@b/g-radio/g-radio.scss';
 @import '@b/header/header.scss';
 @import '@b/footer/footer.scss';
 @import '@b/g-shopcart/g-shopcart.scss';
+@import '@b/g-article-daybook/g-article-daybook.scss';
+
 /* @import 'blocks/component/component'; */
 
 @import '../../layouts/style.scss'; // Add this line
 
 /* pages */
 /* @import 'index'; */
-
+@import '../../pages/index.scss';
 
 * {
 	-webkit-box-sizing: border-box;
@@ -60,9 +64,15 @@ body
 	// background-repeat: no-repeat;
 }
 
-button {
+// ================ Resset ===========================
+
+button 
+{
 	border: none;
 }
-
+h1,h2,h3,h4,h5, h6, p 
+{
+	margin: 0;
+}
 
 

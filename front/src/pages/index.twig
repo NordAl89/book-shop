@@ -2,51 +2,51 @@
 
 {% block page %}
 	<div class="container">
-		 <main>
+		<main>
 			<section class="hero">
-				<div class="slider">
-					<img src="./img/slider-temp.png" alt="" 	class="slider-temp">
+				<div class="hero__desktop">
+					<div class="slider">
+					<img src="./img/slider-temp.png" alt="" class="slider-temp">
 				</div>
-				<article class="day-book">
-				<div class="day-book__wrapper-top">
-				<h3 class="day-book__title-h3">Книга дня</h3>
-					<span class="day-book__time-counter">08:56:31</span>
-				</div> 
-					
-					<img src="./img/oleg-roy.png" alt="книга три ступени вверх" class="day-book__oleg-roy" width=167>
-					<h4 class="day-book__title-h4">
-					Корпоративное право
-					</h4>
-					<p class="day-book__paragraph">
-					<strong>
-					Инвестирование: способы, риски, субъекты : монография
-					</strong>					
-					</p>
-					<span class="day-book__author">
-					Майфат А.В.
-					</span>
-					<p class="day-book__price">
-					4&nbsp;450&nbsp;₽
-					</p>
-					<div class="day-book__wrapper-bottom">
-					<button class="day-book__btn">
-					{% include "@assets/svg/shop-cart.svg" %}
-					В корзину</button>
-					<button class="day-book__defer">
-					{% include "@assets/svg/defer-goods.svg" %}
-					</button>
+				<div class="hero__desktop-hidden">
+					{% include '@blocks/g-article-daybook/g-article-daybook.twig' %}
+				</div>
+				<article class="hero__article hero__article--decor2">
+					<div class="delivery">
+						
+						<p class="delivery__description">
+							Бесплатно доставим ваш заказ при покупке от&nbsp;2000&nbsp;₽
+							<span class="delivery__curve">
+							{% include '@assets/svg/curve-orange.svg' %}
+							</span>
+							
+						</p>
+
+						{% include '@assets/svg/delivery.svg' %}
+				
 					</div>
 				</article>
+				<article class="hero__article hero__article--decor3">
+					<div class="discounts">
+						<p class="discounts__descr">
+							Скидка при регистрации до&nbsp;15%
+						</p>
+					</div>
+				</article>
+				</div>
+
+				{% include '@blocks/g-article-daybook/g-article-daybook.twig' %}
+				
 			</section>
 
-		</main> 
+		</main>
 
 	</div>
 	{#
-			Пример подключения файла
-			{% include '@blocks/component/component.twig' %}
-			Пример подключения svg
-			{% include '@assets/svg/component.svg' %}
-			<img src="./img/logo.png" alt="Logo" width="57px">
-		#}
+				Пример подключения файла
+				{% include '@blocks/component/component.twig' %}
+				Пример подключения svg
+				{% include '@assets/svg/component.svg' %}
+				<img src="./img/logo.png" alt="Logo" width="57px">
+			#}
 {% endblock %}

@@ -116,9 +116,12 @@
 .address__text 
 {
 	margin-left: .4vw;
-	font-family: 'Roboto';
-	font-weight: $medium;
 	color: rgba(28, 41, 77, 0.80);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }
 
 
@@ -256,7 +259,7 @@
 	
 	margin: 0;
 	border: none;
-	background-color: $orange-base;
+	background-color: $base-second;
 	color: $base-first;
 	text-align: right;
 	font-family: Roboto;

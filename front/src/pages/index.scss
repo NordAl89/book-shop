@@ -1,0 +1,57 @@
+
+.hero 
+{
+	display: flex;
+	
+	& .slider
+	{
+		margin-right: 30px;
+		margin-bottom: 25px;
+	}
+}                         
+
+.hero__article
+{
+	width: 360px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: $base-first;
+}
+
+.hero__article--decor2
+{
+	background: #6D378F;
+}
+.hero__article--decor3
+{
+	background: #FFD8EF;
+}
+
+.hero__desktop-hidden 
+{
+	display: none;
+}
+
+.delivery {
+	display: flex;
+
+	& .delivery__description 
+	{
+		position: relative;
+		color: $base-first;
+		font-family: Gosha Sans;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 25px; 
+	}
+
+	& .delivery__curve 
+	{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+

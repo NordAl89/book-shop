@@ -1,0 +1,12 @@
+.g-btn-defer 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	background: $base-first;
+}

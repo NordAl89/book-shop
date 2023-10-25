@@ -4,38 +4,44 @@
 	<div class="container">
 		<main>
 			<section class="hero">
-				<div class="hero__desktop">
-					<div class="slider">
-					<img src="./img/slider-temp.png" alt="" class="slider-temp">
-				</div>
-				<div class="hero__desktop-hidden">
-					{% include '@blocks/g-article-daybook/g-article-daybook.twig' %}
-				</div>
-				<article class="hero__article hero__article--decor2">
-					<div class="delivery">
-						
-						<p class="delivery__description">
-							Бесплатно доставим ваш заказ при покупке от&nbsp;2000&nbsp;₽
-							<span class="delivery__curve">
-							{% include '@assets/svg/curve-orange.svg' %}
-							</span>
-							
-						</p>
-
-						{% include '@assets/svg/delivery.svg' %}
 				
+					<div class="slider">
+						<img src="./img/slider-temp.png" alt="" class="slider-temp">
 					</div>
-				</article>
-				<article class="hero__article hero__article--decor3">
-					<div class="discounts">
-						<p class="discounts__descr">
-							Скидка при регистрации до&nbsp;15%
-						</p>
-					</div>
-				</article>
-				</div>
+					
+						{% include '@blocks/g-article-daybook/g-article-daybook.twig' %}
+					
+					<article class="hero__article hero__article--decor2">
+						<div class="delivery">
+							<p class="delivery__description">
+								<span class="delivery__text-decor">
+								Бесплатно
+									{% include '@assets/svg/curve-orange.svg' %}
+								</span> доставим ваш заказ при покупке от&nbsp;2000&nbsp;₽
+								
 
-				{% include '@blocks/g-article-daybook/g-article-daybook.twig' %}
+							</p>
+							<div class="delivery__img-wrapper">
+								{% include '@assets/svg/delivery.svg' %}
+							</div>
+						</div>
+					</article>
+					<article class="hero__article hero__article--decor3">
+						<div class="discounts">
+							<p class="discounts__description">
+								Скидка при регистрации 
+								<span class="discounts__text-decor">
+								до&nbsp;15%
+								{% include '@assets/svg/curve-green.svg' %}
+								</span>
+															
+							</p>
+							<div class="discounts__img-wrapper">
+								{% include '@assets/svg/discounts.svg' %}
+							</div>
+
+						</div>
+					</article>	
 				
 			</section>
 
@@ -43,10 +49,10 @@
 
 	</div>
 	{#
-				Пример подключения файла
-				{% include '@blocks/component/component.twig' %}
-				Пример подключения svg
-				{% include '@assets/svg/component.svg' %}
-				<img src="./img/logo.png" alt="Logo" width="57px">
-			#}
+					Пример подключения файла
+					{% include '@blocks/component/component.twig' %}
+					Пример подключения svg
+					{% include '@assets/svg/component.svg' %}
+					<img src="./img/logo.png" alt="Logo" width="57px">
+				#}
 {% endblock %}

@@ -6,28 +6,74 @@ main {
 {
 	display: grid;
 	grid-template-areas: 
-	'a a a a a a b b b b'
-	'c c c d d d b b b b'
+	'a a a a a a b b b'
+	'c c c d d d b b b'
 	;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: 25.7vw 140px;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: 25.7vw auto;
 	row-gap: 2.2vw;
 	column-gap: 2.2vw;	
-	
-	& .slider
+
+	margin-bottom: 48px;
+
+	@include mq(769px, 1024px)
 	{
-		grid-area: a;
-		width: 55vw;
-		& .slider-temp {
-			width: 100%;
-		}
+		grid-template-rows: 28vw auto;
+		
 	}
+
+	@include mq(376px, 768px)
+	{
+		grid-template-areas: 
+		'a a a a a a a a a'
+		'c c c c c c b b b'
+		'd d d d d d b b b'
+		;
+		grid-template-rows: auto auto auto;
+		
+	}
+	@include mq(0, 376px)
+	{
+		grid-template-areas: 
+		'a'
+		'b'
+		'c'
+		'd'
+		;
+		grid-template-columns: 1f;
+		grid-template-rows: auto auto auto auto;
+		row-gap: 4vw;
+		
+	}
+	
 }  
 
-.g-article-daybook {
-	grid-area: b;
-}
+.slider
+{
+	grid-area: a;
+	width: 55vw;
+	& .slider-temp {
+		width: 100%;
+		
+		
+	}
 
+	@include mq(768px, 1024px)
+	{
+		width: 60.8vw;		
+	}
+
+	@include mq(376px, 768px)
+	{
+		width: 100%;
+	}
+
+	@include mq(0, 376px)
+	{
+		width: 100%;
+		
+	}
+}
 
 .hero__article
 {
@@ -35,27 +81,197 @@ main {
 	padding: 20px;
 	border-radius: 5px;
 	background-color: $base-first;
+
+	@include mq(768px, 1024px)
+	{
+		width: 29.2vw;
+	}
+
+	@include mq(376px, 768px)
+	{
+		width: 100%;
+	}
+
+	@include mq(0, 376px)
+	{
+		width: 100%;;
+	}
 }
 
+// =============== Daybook article ================
+
+.hero__article--decor1 {
+	grid-area: b;
+
+	@include mq(376px, 768px)
+	{
+		flex-wrap: nowrap;
+		width: 46.2vw;
+	}
+
+	@include mq(0, 376px)
+	{
+		width: 94.6vw;
+	}
+}
+
+.daybook__wrapper-top 
+{
+	display: flex;
+	justify-content: space-between;
+
+	@include mq(376px, 768px)
+	{
+		flex-wrap: wrap;
+	}
+
+	@include mq(0, 376px)
+	{
+		margin-bottom: 19px;
+	}
+
+	& .daybook__title3
+	{
+		margin-bottom: 1.8vw;
+		color: #1C294D;
+		font-family: Roboto;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 20px; 
+	}
+	
+	& .daybook__time-counter
+	{
+		width: 68px;
+		height: 25px;
+		flex-shrink: 0;
+		padding-top: 5px;
+		border-radius: 5px;
+		background: rgba(255, 122, 0, 0.15);
+		color: #FF7A00;
+		text-align: center;
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 15px; 
+	}	
+	
+}
+
+.daybook__image {
+	display: block;
+	width: 12.22vw;
+	margin: 0 auto;
+	margin-bottom: 1.2vw;
+
+	@include mq(376px, 768px)
+	{
+		width: 22vw;
+	}
+
+	@include mq(0, 376px)
+	{
+		width: 35.2vw;
+		margin-bottom: 16px;
+	}
+}
+
+.daybook__title4 
+{
+	margin-bottom: 6px;
+	color: rgba(28, 41, 77, 0.50);
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px; 
+	letter-spacing: .6px;
+}
+
+.daybook__descr 
+{
+	margin-bottom: 9px;
+	color: #1C294D;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 19px; 
+	
+}
+
+.daybook__author
+{
+	margin-bottom: 8px;
+	color: #1C294D;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px; 
+	
+}
+
+.daybook__price 
+{
+	margin-bottom: 11px;
+	color: #1C294D;
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px; 
+	
+}
+
+.daybook__wrapper-bottom 
+{
+	display: flex;
+	align-items: center;
+
+	@include mq(376px, 768px)
+	{
+		flex-wrap: wrap;
+	}
+	& .g-btn-shopcart{
+		@include mq(0, 376px)
+		{
+			width: 71vw;
+		}
+		
+	}
+	
+}
+
+// ================= Delivery =============
 .hero__article--decor2
 {
 	grid-area: c;
 	padding: 19px 25px 14px 25px;
 	background: #6D378F;
-}
-.hero__article--decor3
-{
-	grid-area: d;
-	background: #FFD8EF;
-	padding: 20px 25px;
+	@include mq(0, 376px)
+		{
+			padding: 15px 20px 14px 20px;
+		}
 }
 
 
-// ================= Delivery =============
 .delivery 
 {
-	display: flex;
+	display: flex;	
 	align-items: center;
+
+	@include mq(768px, 1024px)
+	{
+		flex-wrap: wrap;
+	}
+
+	@include mq(376px, 768px)
+	{
+		flex-wrap: wrap;
+	}
 }
 
 .delivery__description
@@ -82,10 +298,33 @@ main {
 	}
 }
 // =============== Discounts ===============
+.hero__article--decor3
+{
+	grid-area: d;
+	background: #FFD8EF;
+	padding: 20px 25px 14px 25px;
+
+	@include mq(0, 376px)
+		{
+			padding: 15px 20px 14px 20px;
+		}
+	
+}
+
 .discounts
 {
-	display: flex;
+	display: flex;	
 	align-items: center;
+
+	@include mq(768px, 1024px)
+	{
+		flex-wrap: wrap;
+	}
+
+	@include mq(376px, 768px)
+	{
+		flex-wrap: wrap;
+	}
 }
 
 .discounts__description
@@ -112,8 +351,5 @@ main {
 	}
 }
 
-.g-article-daybook 
-{
-	width: 26.4vw;;
-}
+
 

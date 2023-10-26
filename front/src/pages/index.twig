@@ -3,46 +3,83 @@
 {% block page %}
 	<div class="container">
 		<main>
-			<section class="hero">
+			<section class="section hero">
 				
-					<div class="slider">
-						<img src="./img/slider-temp.png" alt="" class="slider-temp">
+				<div class="slider">
+					<img src="./img/slider-temp.png" alt="" class="slider-temp">
+				</div>
+
+				<article class="hero__article hero__article--decor1">
+					<div class="daybook">
+						<div class="daybook__wrapper-top">
+							<h3 class="daybook__title3">Книга дня</h3>
+							<div class="daybook__time-counter">08:56:31
+							</div>
+							</div>
+						<img src="./img/oleg-roy.png" alt="книга три ступени вверх" class="daybook__image">
+						<h4 class="daybook__title4">
+							Корпоративное право
+						</h4>
+						<p class="daybook__descr">
+							<strong>
+								Инвестирование: способы, риски, субъекты : монография
+							</strong>
+						</p>
+						<p class="daybook__author">
+							Майфат А.В.
+						</p>
+						<p class="daybook__price">
+							4&nbsp;450&nbsp;₽
+						</p>
+						<div class="daybook__wrapper-bottom">
+						
+							{% include "@blocks/g-btn-shopcart/g-btn-shopcart.twig" %}
+							
+							{% include "@blocks/g-btn-defer/g-btn-defer.twig" %}
+					
+						</div>					
+					</div>					
+				</article>					
+										
+				<article class="hero__article hero__article--decor2">
+					<div class="delivery">
+						<p class="delivery__description">
+							<span class="delivery__text-decor">
+							Бесплатно
+								{% include '@assets/svg/curve-orange.svg' %}
+							</span> доставим ваш заказ при покупке от&nbsp;2000&nbsp;₽
+							
+
+						</p>
+						<div class="delivery__img-wrapper">
+							{% include '@assets/svg/delivery.svg' %}
+						</div>
 					</div>
-					
-						{% include '@blocks/g-article-daybook/g-article-daybook.twig' %}
-					
-					<article class="hero__article hero__article--decor2">
-						<div class="delivery">
-							<p class="delivery__description">
-								<span class="delivery__text-decor">
-								Бесплатно
-									{% include '@assets/svg/curve-orange.svg' %}
-								</span> доставим ваш заказ при покупке от&nbsp;2000&nbsp;₽
-								
-
-							</p>
-							<div class="delivery__img-wrapper">
-								{% include '@assets/svg/delivery.svg' %}
-							</div>
+				</article>
+				<article class="hero__article hero__article--decor3">
+					<div class="discounts">
+						<p class="discounts__description">
+							Скидка при регистрации 
+							<span class="discounts__text-decor">
+							до&nbsp;15%
+							{% include '@assets/svg/curve-green.svg' %}
+							</span>
+														
+						</p>
+						<div class="discounts__img-wrapper">
+							{% include '@assets/svg/discounts.svg' %}
 						</div>
-					</article>
-					<article class="hero__article hero__article--decor3">
-						<div class="discounts">
-							<p class="discounts__description">
-								Скидка при регистрации 
-								<span class="discounts__text-decor">
-								до&nbsp;15%
-								{% include '@assets/svg/curve-green.svg' %}
-								</span>
-															
-							</p>
-							<div class="discounts__img-wrapper">
-								{% include '@assets/svg/discounts.svg' %}
-							</div>
 
-						</div>
-					</article>	
-				
+					</div>
+				</article>	
+
+			</section>
+
+			<section class='section arrivels'>
+				{% include '@blocks/g-arrivels/g-arrivels.twig' %}
+			</section>
+			<section class='section releases'>
+				{% include '@blocks/g-arrivels/g-arrivels.twig' %}
 			</section>
 
 		</main>

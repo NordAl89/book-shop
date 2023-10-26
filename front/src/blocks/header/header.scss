@@ -8,6 +8,11 @@
 	width: 100vw;
 	background-color: $base-first;
 	margin-bottom: 30px;
+
+	@include mq(0, 376px)
+		{
+			margin-bottom: 13px;
+		}
 	
  }
 
@@ -37,10 +42,10 @@
 	
 	
 	@include mq(768px, 1024px)
-			{
-				flex-wrap: wrap;
-				justify-content: space-evenly;
-			}
+		{
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
  }
 
 // ============== Navigation ==================
@@ -133,10 +138,8 @@
 	align-items: center;
 	
 	@include mq(768px, 1024px)
-		{
-			
-			flex-direction: column;
-			
+		{			
+			flex-direction: column;			
 		}
 	
 }
@@ -241,6 +244,7 @@
 
 	@include mq(0, 768px)
 	{
+		width: 100%;
 		margin-right: 7px;	
 		padding-left: 12px;	
 		background-color: #F7F7F7;
@@ -267,6 +271,11 @@
 	font-style: normal;
 	font-weight: $medium;
 	line-height: 20px;
+
+	@include mq(0, 376px)
+		{
+			margin-right: 12px;
+		}
 
 	& svg 
 	{

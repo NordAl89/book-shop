@@ -22,7 +22,7 @@
  {	
 	display: flex;
 	align-items: center;	
-	margin-bottom: 14px;
+	margin-bottom: 16px;
 	background-color: $base-first;
 	border-bottom: 2px solid $page-bg-color;
 	
@@ -186,8 +186,12 @@
 }
 
 .tablet-screen-logo {
+	
 	svg {
-		width: 44px;
+		@include mq(0, 768px)
+		{
+			width: 44px;
+		}
 	}
 
 }

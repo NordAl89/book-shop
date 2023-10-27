@@ -1,0 +1,25 @@
+.g-btn-arrows
+{	display: flex;
+	justify-content: space-evenly;
+	width: 61px;
+	height: 30px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.g-btn-arrows__prev
+{
+	width: 30px;	
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid rgba(28, 41, 77, 0.15);
+}
+
+.g-btn-arrows__next
+{
+	width: 30px;	
+	margin-left: -1px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid rgba(28, 41, 77, 0.15);
+}

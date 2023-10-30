@@ -7,6 +7,11 @@
 	background-color: $base-first;
 	border-radius: 5px;
 	margin-bottom: 2px;
+
+	@include mq(0, 376px){
+		padding: 18px 9px 17px 9px;
+		margin-bottom: 0;
+	}
 }
 
 .g-arrivels__title2
@@ -24,6 +29,8 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 2px;
+	
+	// background-color: red;
 }
 
 .g-arrivels__bottom
@@ -34,7 +41,11 @@
 	padding: 10px 25px 10px 25px;
 	background-color: $base-first;
 	border-radius: 5px;
-	margin-bottom: 2px;
+	margin-bottom: 0;
+
+	@include mq(0, 768px){
+		padding: 8px 25px 10px 25px;
+	}
 }
 
 .g-arrivels__btn-bottom
@@ -45,31 +56,83 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: 20px;
+
+	@include mq(0, 768px){
+		display: none;
+	}
+
+}
+
+.g-arrivels__btn-bottom-tablet
+{
+	display: none;
+	
+	color: #1C294D;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	
+	
+	@include mq(0, 768px){
+		display: block;
+		padding-right: 12px;
+	}
 }
 // ============= Arrivels Article ==================
 
 .article-arrivels
 {
-	padding-left: 16px;
+	// padding-left: 16px;
+	padding-left: 1.12vw;
 	background-color: $base-first;	
-	width: 289px;	
+	// width: 21.2vw;	
+	width: 25.4%;
+		
+	&:nth-child(2), &:nth-child(3)
+	{
+		@include mq(0, 768px){
+			display: none;
+		}
+		
+	}
 }
 
 .article-arrivels:first-child 
 {
 	padding-left: 0;
-	width: 276px;
+	// width: 20.3vw;
+	width: 24.3%;
+
+	@include mq(0, 768px){
+		width: 49.8%;
+		// width: 47.2vw;
+	}
 }
 .article-arrivels:last-child 
 {	
-	width: 277px;
+	// width: 20.3vw;
+	width: 24.3%;
+
+	@include mq(0, 768px){
+		width: 49.8%;
+		// width: 47.2vw;
+	}
 }
 
 
 .article-arrivels__content
 {
 	width: 19.25vw;
-	padding: 22px 20px 21px 20px;
+	padding: 22px 1.46vw 21px 1.46vw;
+	// padding: 22px 20px 21px 20px;
+
+	@include mq(0, 768px){
+		width: 47.25vw;
+		padding: 18px 1.46vw 21px 2.2vw;
+	}
+
 }
 
 .article-arrivels__image
@@ -78,7 +141,11 @@
 	position: relative;	
 	margin-bottom: 9px;
 
-	
+	& img {
+		@include mq(0, 376px) {
+		width: 33.6vw;
+	}
+	}	
 }
 
 .article-arrivels__lable-one
@@ -120,6 +187,25 @@
 	line-height: 15px; 
 }
 
+.article-arrivels__lable-three
+{
+	position: absolute;
+	top: -5px;
+	left: -3px;
+	width: 70px;
+	height: 25px;
+	flex-shrink: 0;
+	background-color: #E2F6EC;
+	border-radius: 4px;
+	padding-top: 5px;
+	color: #3DC47E;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 15px; 
+}
 
 .article-arrivels__title4 
 {
@@ -136,7 +222,7 @@
 
 .article-arrivels__descr
 {
-	width: 94%;
+	width: 100%;
 	margin-bottom: 9px;
 
 	color: #1C294D;
@@ -161,6 +247,13 @@
 	letter-spacing: -0.1px;
 }
 
+.article-arrivels__price-discount
+{	
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
 .article-arrivels__price
 {
 	margin-bottom: 9px;
@@ -171,6 +264,46 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 20px;
+
+	@include mq(0, 768px)
+	{
+		margin-bottom: 4px;
+	}
+}
+
+.article-arrivels__price--decor
+{
+	color: #FD3A3A;
+}
+
+.article-arrivels__price-old
+{
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: rgba(28, 41, 77, 0.50);
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px; 
+
+	& svg 
+	{
+		position: absolute;
+		left: 0;
+		top: 5px;
+	}
+}
+
+.article-arrivels__profit
+{
+	color: #0DB98C;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 
 .article-arrivels__ratings 
@@ -178,6 +311,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
 	margin-bottom: 12px;
 }
 
@@ -202,6 +336,11 @@
 	font-weight: 500;
 	line-height: 13px;
 	text-transform: uppercase;
+
+	@include mq(0, 768px)
+	{
+		margin-bottom: 7px;
+	}
 }
 
 .article-arrivels__recomends
@@ -221,6 +360,22 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: 12px;
+
+	@include mq(0, 768px)
+	{
+		margin-bottom: 0;
+	}
+}
+
+.article-arrivels:last-child
+{
+	& .article-arrivels__recomends
+	{
+		@include mq(0, 768px)
+		{
+			visibility: hidden;
+		}
+	}
 }
 
 .article-arrivels__bottom
@@ -228,4 +383,30 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
+
+	& .g-btn-shopcart
+	{
+		@include mq(0, 375px)
+		{
+			width: 117px;
+			height: 35px;
+		}
+		
+	}
+
+	& .g-btn-defer
+	{
+		@include mq(0, 375px)
+		{
+			width: 35px;
+			height: 35px;
+		}
+		
+	}
+}
+
+.hidden-staff 
+{
+	display: none;
 }

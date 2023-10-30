@@ -78,9 +78,27 @@
 			<section class='section arrivels'>
 				{% include '@blocks/g-arrivels/g-arrivels.twig' %}
 			</section>
+			<section class="section subscribe">
+				<p class="subscribe__text">
+				 <span class="subscribe__discount">
+				Скидка&nbsp;200&nbsp;₽&nbsp;при
+				{% include '@assets/svg/subscribe-discount.svg' %}
+				</span>  подписке на&nbsp;рассылку Издательства 
+				</p>
+
+				<form action="" class="subscribe__form">
+					<input type="text" class="subscribe__form-input" placeholder='Введите ваш Email'>
+					<button class="subsribe__form-btn">
+						Подписаться
+					</button>
+				</form>
+			
+			</section>
 			<section class='section releases'>
 				{% include '@blocks/g-arrivels/g-arrivels.twig' %}
 			</section>
+
+			
 
 		</main>
 

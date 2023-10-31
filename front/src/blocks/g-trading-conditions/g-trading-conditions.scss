@@ -1,0 +1,148 @@
+.g-trading-conditions
+{
+	display: flex;
+	justify-content: space-between;
+
+	@include mq(376px, 768px)
+	{
+		flex-wrap: wrap;
+	}
+
+	@include mq(0, 375px)
+	{
+		flex-direction: column;
+		
+	}
+	
+}
+
+
+.g-trading-conditions__wrap
+{
+	display: flex;
+	justify-content: space-between;
+	width: 48.8%;
+	@include mq(376px, 768px)
+	{
+		width: 100%;
+	}	
+
+	&:first-child 
+	{
+		@include mq(376px, 768px)
+		{
+			margin-bottom: 20px;
+		}
+	}
+
+	@include mq(0, 375px)
+	{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+}
+
+.g-trading-conditions__article
+{
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+	width: 48%;
+	min-height: 150px;
+	padding: 12px ;
+	background-color: $base-first;
+
+	@include mq(376px, 1024px)
+	{
+		flex-wrap: wrap;
+	}
+	@include mq(0, 375px)
+	{
+		width: 100%;
+		padding-top: 33px;
+		padding-left: 19px;
+
+		&:nth-child(1)
+		{
+			order: 0;
+		}
+
+		&:nth-child(2)
+		{
+			order: 2;
+			
+		}
+		&:nth-child(3)
+		{
+			order: 1;
+			
+		}
+	}
+
+	&:not(:last-child)
+	{
+		@include mq(0, 375px)
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+}
+
+.g-trading-conditions__image
+{
+	width: 60px;
+	overflow: unset;
+	margin-right: 16px;
+	& img 
+	{
+		transform: translateX(-12px);
+
+		@include mq(0, 375px)
+	{
+		width: 132px;
+		height: 90px;
+	}
+		
+	}
+
+	@include mq(0, 375px)
+	{
+		width: 80px;
+		margin-right: 7.4vw;
+	}
+}
+
+.g-trading-conditions__text
+{
+	// width: 159px;
+}
+
+.g-trading-conditions__title3
+{
+	margin-top: -6px;
+	color: #1C294D;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 25px;
+}
+
+.g-trading-conditions__descr
+{
+	color: #727272;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+
+	@include mq(0, 375px)
+	{
+		color: rgba(28, 41, 77, 0.50);
+		font-size: 14px;		
+		line-height: 20px; 
+	}
+}

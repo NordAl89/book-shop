@@ -365,6 +365,19 @@ main {
 	padding: 2.4vw 3.3vw 2.4vw 3.3vw;
 	border-radius: 5px;
 	background: #0288D1;
+
+	@include mq(376px, 767px)
+	{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	@include mq(0, 375px)
+	{
+		
+		flex-wrap: wrap;
+		padding: 21px 10px 20px 10px;
+	}
 }
 
 .subscribe__text
@@ -374,7 +387,18 @@ main {
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 20px; 
+	line-height: 20px;
+
+	@include mq(0, 767px)
+	{
+		margin-bottom: 10px;
+	}
+
+	@include mq(0, 375px)
+	{
+		margin-bottom: 11px;
+		line-height: 24px;
+	}
 }
 
 .subscribe__discount 
@@ -395,19 +419,31 @@ main {
 {
 	display: flex;
 	justify-content: space-between;
-	height: 40px;
+	min-height: 40px;
 	// width: 565px;	
 	width: 53.8%;
 	min-width: 400px;
 
 	border-radius: 5px;
 	overflow: hidden;
-	// background: $base-first;
+
+	@include mq(376px, 767px)
+	{
+		width: 72%;
+		min-width: 340px;
+	}
+
+	@include mq(0, 375px)
+	{	
+		width: 95vw;
+		min-width: 300px;
+		min-height: 90px;
+		flex-wrap: wrap;
+	}
 }
 
 .subscribe__form-input
 {
-	height: 100%;
 	// width: 418px;
 	width: 74%;
 	min-width: 280px;
@@ -421,8 +457,21 @@ main {
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 20px; 
-	
+	line-height: 20px;
+
+	@include mq(376px, 767px)
+	{
+		min-width: 200px;
+	}
+
+	@include mq(0, 375px)
+	{
+		height: 40px;
+		min-width: 300px;
+		width: 100%;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
 }
 
 .subsribe__form-btn
@@ -439,6 +488,12 @@ main {
 	font-style: normal;
 	font-weight: 500;
 	line-height: 20px; 
+
+	@include mq(0, 375px)
+	{
+		height: 40px;
+		width: 100%;
+	}
 }
 
 

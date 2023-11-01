@@ -6,7 +6,7 @@
 	padding: 18px 25px 17px 25px;
 	background-color: $base-first;
 	border-radius: 5px;
-	margin-bottom: 2px;
+	margin-bottom: 0;
 
 	@include mq(0, 376px){
 		padding: 18px 9px 17px 9px;

@@ -5,6 +5,9 @@
 	background-color: antiquewhite;
 }
 
-.tempFspan {
-	color: red;
+.footer__body-desk
+{
+	display: flex;
+	justify-content: space-evenly;
+	background-color: $base-first;
 }

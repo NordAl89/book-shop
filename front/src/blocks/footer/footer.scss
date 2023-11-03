@@ -1,13 +1,408 @@
 .footer 
 {
 	width: 100vw;
-	height: 455px;
-	background-color: antiquewhite;
+	// height: 455px;
+	background-color: $base-first;
 }
 
-.footer__body-desk
+.footer--desktop
+{
+	@include mq(0, 768px)
+	{
+		display: none
+	}
+}
+
+.footer__header
+{
+	padding-top: 25px;
+	padding-bottom: 18px;
+	background: rgba(40, 47, 54, 0.04);
+
+}
+
+.footer__container
 {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__header-wrap
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 69.3%;
+}
+
+.footer__header-form
+{	
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	width: 56%;
+	border-radius: 5px;
+	border: 2px solid rgba(40, 47, 54, 0.15);
+	margin-top: -6px;
+	overflow: hidden;
 	background-color: $base-first;
+
+	@include mq(769px, 1024px)
+	{
+		width: 68%;
+	}
+}
+
+.footer__header-input
+{
+	width: 90%;
+	padding-left: 14px;
+
+	color: rgba(40, 47, 54, 0.50);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; 
+	letter-spacing: .6px
+}
+
+.footer__header-btn
+{
+	width: 47px;
+	height: 38px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: $base-second;
+}
+
+.footer__header-list
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 13.2%;
+	margin-top: -4px;
+
+	@include mq(769px, 1024px)
+	{
+		width: 19%;
+	}
+}
+
+.footer__header-item
+{
+	&:not(:last-child)
+	{
+		margin-right: 10px;
+	}
+}
+
+
+.footer__header-link
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid rgba(40, 47, 54, 0.15);
+}
+
+// ====================== Footer Desktop ======================
+.footer__body-desk
+{
+	display: flex;	
+	background-color: $base-first;
+	border-bottom: 2px solid rgba(40, 47, 54, 0.15);
+	padding-top: 47px;
+	padding-bottom: 34px;
+
+	@include mq(769px, 1024px)
+	{
+		justify-content: space-between;
+	}
+}
+
+.footer__body-desk-nav
+{
+	width: 165px;	
+	// width: 14.5%;
+	&:not(:last-child)
+	{
+		margin-right: 2.2vw;
+	}
+	
+	@include mq(769px, 1024px)
+	{
+		width: 145px;
+	}
+}
+
+.footer__body-desk-nav-title3
+{
+	margin-bottom: 20px;
+
+	color: #1C294D;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px; 
+}
+
+.footer__body-desk-list
+{
+	width: 100%;
+}
+
+.footer__body-desk-item
+{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.footer__body-desk-item--address
+{
+	margin-bottom: 16px;
+
+	& .footer__body-desk-link
+	{
+		letter-spacing: .3px
+	}
+}
+
+.footer__body-desk-link
+{
+	
+	// width: 100%;
+	color: rgba(40, 47, 54, 0.80);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: .8px
+
+	
+}
+
+.footer__body-desk-link-text
+{
+	width: 140px;
+}
+
+.footer__body-desk-link--flex
+{
+ display: flex;
+ align-items: center;
+
+
+ & svg
+	{
+		
+		margin-right: 6px;
+	}
+
+
+}
+
+.footer__body-desk-link-span
+{
+	display: block;
+
+	color: rgba(40, 47, 54, 0.50);
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+
+}
+
+// ============== Fotter Tablet ===============
+
+
+// ================= Footer bottom ================
+
+.footer__bottom
+{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 32px;
+	flex-wrap: wrap;
+	background-color: $base-first;
+
+	
+}
+
+.footer__bottom-text
+{
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	
+}
+
+.footer__bottom-company
+{
+	// margin-right: 208px;
+	margin-right: 15.2vw;
+	color: rgba(28, 41, 77, 0.50);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: .6px;
+}
+
+.footer__bottom-address
+{
+	color: rgba(28, 41, 77, 0.80);
+	text-align: center;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: .5px;
+}
+
+.footer__bottom-list
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 353px;
+	margin-bottom: 10px;
+	
+}
+
+.footer__bottom-link
+{
+	color: rgba(28, 41, 77, 0.80);
+	text-align: right;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: .9px
+}
+
+
+// ================ Footer-tab ================
+
+.footer-tab--display
+{
+	
+	@include mq(769px)
+	{
+		display: none;
+	}
+
+}
+
+.footer-tab__header
+{
+	// width: 100%;
+	padding-top: 25px;
+	padding-bottom: 18px;
+	background: rgba(40, 47, 54, 0.04);
+	
+}
+
+.footer-tab__container
+{
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+
+.footer-tab__header-wrap
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// width: 69.3%;
+}
+
+.footer-tab__header-form
+{	
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	width: 68%;
+	border-radius: 5px;
+	border: 2px solid rgba(40, 47, 54, 0.15);
+	margin-top: -6px;
+	overflow: hidden;
+	background-color: $base-first;
+	
+}
+
+.footer-tab__header-input
+{
+	width: 90%;
+	padding-left: 14px;
+
+	color: rgba(40, 47, 54, 0.50);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; 
+	letter-spacing: .6px
+}
+
+.footer-tab__header-btn
+{
+	width: 47px;
+	height: 38px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: $base-second;
+}
+
+.footer-tab__header-list
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 160px;
+	
+	
+}
+
+.footer-tab__header-item
+{
+	&:not(:last-child)
+	{
+		margin-right: 10px;
+	}
+}
+
+
+.footer-tab__header-link
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #3064CE;
+}
+
+.footer-tab__header-link--decor
+{
+	background-color: #E4405F;
 }

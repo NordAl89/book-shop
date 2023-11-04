@@ -1,0 +1,97 @@
+.footer-tab__header
+{
+	padding-top: 25px;
+	padding-bottom: 18px;
+	background: rgba(40, 47, 54, 0.04);
+
+}
+
+.footer__container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-tab__header-wrap
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 69.3%;
+}
+
+.footer-tab__header-form
+{	
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	width: 56%;
+	border-radius: 5px;
+	border: 2px solid rgba(40, 47, 54, 0.15);
+	margin-top: -6px;
+	overflow: hidden;
+	background-color: $base-first;
+
+	@include mq(769px, 1024px)
+	{
+		width: 68%;
+	}
+}
+
+.footer-tab__header-input
+{
+	width: 90%;
+	padding-left: 14px;
+
+	color: rgba(40, 47, 54, 0.50);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; 
+	letter-spacing: .6px
+}
+
+.footer-tab__header-btn
+{
+	width: 47px;
+	height: 38px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: $base-second;
+}
+
+.footer-tab__header-list
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 13.2%;
+	margin-top: -4px;
+
+	@include mq(769px, 1024px)
+	{
+		width: 19%;
+	}
+}
+
+.footer-tab__header-item
+{
+	&:not(:last-child)
+	{
+		margin-right: 10px;
+	}
+}
+
+
+.footer-tab__header-link
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid rgba(40, 47, 54, 0.15);
+}

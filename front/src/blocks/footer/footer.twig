@@ -13,28 +13,27 @@
 					</button>
 				</form>
 			</div>
-			
-				
-					<ul class="footer__header-list">
-						<li class="footer__header-item">
-							<a href="" class="footer__header-link">
-								{% include '@assets/svg/Facebook-dark.svg' %}
-							</a>
-						</li>
-						<li class="footer__header-item">
-							<a href="" class="footer__header-link">
-								{% include '@assets/svg/Instagram-dark.svg' %}
-							</a>
-						</li>
-						<li class="footer__header-item">
-							<a href="" class="footer__header-link">
-								{% include '@assets/svg/Twitter_dark.svg' %}
-							</a>
-						</li>
 
-					</ul>				
 
-			
+			<ul class="footer__header-list">
+				<li class="footer__header-item">
+					<a href="" class="footer__header-link">
+						{% include '@assets/svg/Facebook-dark.svg' %}
+					</a>
+				</li>
+				<li class="footer__header-item">
+					<a href="" class="footer__header-link">
+						{% include '@assets/svg/Instagram-dark.svg' %}
+					</a>
+				</li>
+				<li class="footer__header-item">
+					<a href="" class="footer__header-link">
+						{% include '@assets/svg/Twitter_dark.svg' %}
+					</a>
+				</li>
+
+			</ul>
+
 
 		</div>
 	</div>
@@ -129,12 +128,12 @@
 							{% include '@assets/svg/file.svg' %}
 							<p class="footer__body-desk-link-text">
 								Скачать прайс-лист
-							<span class="footer__body-desk-link-span">
-								PDF, 12 Mb
-							</span>
+								<span class="footer__body-desk-link-span">
+									PDF, 12 Mb
+								</span>
 
 							</p>
-							
+
 						</a>
 					</li>
 
@@ -165,7 +164,7 @@
 			</div>
 
 
-		</div>		
+		</div>
 
 		<div class="footer__bottom">
 			<div class="footer__bottom-text">
@@ -175,7 +174,7 @@
 				<p class="footer__bottom-address">
 					ул. Лобачевского, 92, корп. 2 119454, г. Москва
 				</p>
-			
+
 			</div>
 			<ul class="footer__bottom-list">
 				<li class="footer__bottom-item">
@@ -189,8 +188,8 @@
 					</a>
 				</li>
 			</ul>
-		
-		 </div>
+
+		</div>
 
 	</div>
 </footer>
@@ -199,8 +198,34 @@
 
 <footer class="footer-tab footer-tab--display ">
 	<div class="footer-tab__header">
-		<div class="footer-tab__container container">
-			<div class="footer-tab__header-wrap">
+		<div class="footer-tab__block">
+			<div class="footer-tab__container container">
+
+				<ul class="footer-tab__header-list">
+					<li class="footer-tab__header-item">
+						<a href="" class="footer-tab__header-link">
+							{% include '@assets/svg/Instagram_white.svg' %}
+						</a>
+					</li>
+					<li class="footer-tab__header-item">
+						<a href="" class="footer-tab__header-link">
+							{% include '@assets/svg/vk.svg' %}
+						</a>
+					</li>
+					<li class="footer-tab__header-item">
+						<a href="" class="footer-tab__header-link footer-tab__header-link--decor">
+							{% include '@assets/svg/Twitter_white.svg' %}
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+		<div class="footer-tab__block">
+
+			<div class="footer-tab__container container">
+
 				<div class="footer-tab__header-logo">
 					{% include '@assets/svg/statut-logo.svg' %}
 				</div>
@@ -211,26 +236,91 @@
 						{% include '@assets/svg/paper-jet.svg' %}
 					</button>
 				</form>
+
 			</div>
-
-			<ul class="footer-tab__header-list">
-						<li class="footer-tab__header-item">
-							<a href="" class="footer-tab__header-link">
-								{% include '@assets/svg/Instagram_white.svg' %}
-							</a>
-						</li>
-						<li class="footer-tab__header-item">
-							<a href="" class="footer-tab__header-link">
-								{% include '@assets/svg/vk.svg' %}
-							</a>
-						</li>
-						<li class="footer-tab__header-item">
-							<a href="" class="footer-tab__header-link footer-tab__header-link--decor">
-								{% include '@assets/svg/Twitter_white.svg' %}
-							</a>
-						</li>
-
-					</ul>	
 		</div>
+
+
 	</div>
+	<div class="footer-tab__accordion">
+		<div class="footer-tab__container container">
+			<div class="accordion">
+				<div class="accordion__block">
+					<div class="accordion__section">
+						<button 
+						onclick="o2.footer.accordion()"
+						class="accordion__btn">
+							Покупателям
+
+							<div class="accordion__btn-img">
+								{% include '@assets/svg/arrow-accord.svg' %}
+							</div>
+
+						</button>
+						<ul class="accordion__list ">
+					<li class="accordion__item">
+						<a href="" class="accordion__link">
+							Наша&nbsp;почта
+						</a>
+					</li>
+					<li class="accordion__item">
+						<a href="" class="accordion__link">
+							Оплата&nbsp;и&nbsp;доставка
+						</a>
+					</li>
+					<li class="accordion__item">
+						<a href="" class="accordion__link">
+							Вопросы&nbsp;и&nbsp;ответы
+						</a>
+					</li>
+				</ul>
+
+					</div>
+					<div class="accordion__section">
+						<button class="accordion__btn">
+							Издательство
+
+							<div class="accordion__btn-img">
+								{% include '@assets/svg/arrow-accord.svg' %}
+							</div>
+
+						</button>
+
+					</div>
+				</div>
+				<div class="accordion__block">
+					<div class="accordion__section">
+						<button class="accordion__btn">
+							Книги
+
+							<div class="accordion__btn-img">
+								{% include '@assets/svg/arrow-accord.svg' %}
+							</div>
+
+						</button>
+
+					</div>
+					<div class="accordion__section accordion__section--decor ">
+						<button class="accordion__btn">
+							Прайс-лист
+
+							<div class="accordion__btn-img">
+								{% include '@assets/svg/arrow-accord.svg' %}
+							</div>
+
+						</button>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="footer-tab__body">
+		<div class="footer-tab__container container"></div>
+
+	</div>
+
+
 </footer>

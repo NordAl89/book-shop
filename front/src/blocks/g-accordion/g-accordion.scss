@@ -1,0 +1,61 @@
+
+.accordion
+{ 	
+	width: 100%;
+}
+
+.accordion__section
+{
+	display: flex;
+	flex-direction: column ;	
+	width: 100%;
+	min-height: 60px;
+	padding: 18px 5px 11px 0;
+	border-bottom: 1px solid rgba(42, 61, 72, 0.15);	
+
+}
+
+.accordion__section--decor 
+{
+	border-bottom: none;	
+}
+
+.accordion__btn
+{
+	display: flex;
+	justify-content: space-between;	
+
+	color: #2A3D48;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; 
+	letter-spacing: .8px;
+
+}
+
+.accordion__list
+{
+	max-height: 100px;
+	overflow: auto;
+	margin-top: 10px;
+	transition: max-height .6s;
+	border-top: 1px dashed rgba(42, 61, 72, 0.15);	
+}
+
+.accordion__list--hidden
+{
+	max-height: 0;
+	border-top: none;
+}
+
+.accordion__item
+{
+	color: rgba(40, 47, 54, 0.80);
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; 
+}

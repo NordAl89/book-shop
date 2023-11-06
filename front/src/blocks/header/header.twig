@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="header__top">
-    	<div class="container">
+		<div class="container">
 			<div class="header__wrapper">
 				<nav class="navigation">
 					<ul class="navigation__list">
@@ -17,7 +17,8 @@
 							<a class="navigation__link" href="#">
 								{% include '@assets/svg/shipping.svg' %}
 								<span class="navigation__text">
-									<span>Доставка</span> и&nbsp;оплата 
+									<span>Доставка</span>
+									и&nbsp;оплата
 								</span>
 
 							</a>
@@ -55,33 +56,31 @@
 				</address>
 			</div>
 		</div>
-		</div>
+	</div>
 	<div class="container">
 
-		
+
 		<div class="header__middle">
 			<div class="header__logo-form-wrapper">
 				<div class="tablet-screen tablet-screen-burger">
 					{% include '@assets/svg/burger-catalog.svg' %}
 				</div>
-					<div class="tablet-screen-logo">
-						{% include '@assets/svg/statut-logo.svg' %}
-					</div>
-					
+				<div class="tablet-screen-logo">
+					{% include '@assets/svg/statut-logo.svg' %}
+				</div>
+
 				<form class='form' action="">
 					<input class='form__input _inputHeader' type="text" placeholder='Автор, название, ISBN'>
-					<button 
-					
-					class='form__button'>
+					<button class='form__button'>
 						{% include '@assets/svg/magnifire.svg' %}
 						Искать</button>
-						
+
 				</form>
 				<div class='tablet-screen tablet-screen-shopcart'>
 					{% include '@blocks/g-shopcart/g-shopcart.twig' %}
+				</div>
 			</div>
-			</div>
-			
+
 
 			<nav class="navigation navigation--header-middle">
 				<ul class="navigation__list">
@@ -104,7 +103,7 @@
 
 					<li class="navigation__item">
 						<a class="navigation__link" href="#">
-							
+
 							{% include '@blocks/g-shopcart/g-shopcart.twig' %}
 
 							<span class="navigation__text">
@@ -116,12 +115,12 @@
 			</nav>
 		</div>
 		<div class="header__bottom">
-		{% include '@assets/svg/burger-catalog.svg' %}
+			{% include '@assets/svg/burger-catalog.svg' %}
 			<nav class="navigation ">
 				<ul class="navigation__list">
 					<li class="navigation__item">
 						<a class="navigation__link" href="#">
-							
+
 							<span class="navigation__text">
 								Каталог
 							</span>
@@ -129,7 +128,7 @@
 					</li>
 					<li class="navigation__item">
 						<a class="navigation__link" href="#">
-							
+
 							<span class="navigation__text">
 								Авторы
 							</span>
@@ -138,7 +137,7 @@
 
 					<li class="navigation__item">
 						<a class="navigation__link" href="#">
-							
+
 							<span class="navigation__text">
 								Новинки
 							</span>
@@ -154,7 +153,7 @@
 					</li>
 					<li class="navigation__item">
 						<a class="navigation__link" href="#">
-							
+
 							<span class="navigation__text">
 								Партнёрам
 							</span>
@@ -162,7 +161,7 @@
 					</li>
 					<li class="navigation__item">
 						<a class="navigation__link" href="#">
-							
+
 							<span class="navigation__text">
 								Мы
 							</span>

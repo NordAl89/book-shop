@@ -41,9 +41,9 @@
 	@include mq(0, 375px)
 	{
 		width: 100%;
-		min-height: 170px;
-		// padding-top: 33px;
-		padding-left: 19px;		
+		min-height: 170px;		
+		padding-left: 19px;	
+		padding-right: 15px;	
 
 		&:nth-child(1)
 		{
@@ -98,6 +98,26 @@
 	{
 		width: 80px;
 		margin-right: 7.4vw;
+	}
+}
+
+//correct bag and card image for perfect
+.g-trading-conditions__article
+{
+	&:last-child img
+	{
+		@include mq(0, 375px)
+		{
+			transform: translateX(-5px);
+		}
+	}
+	&:nth-child(2) img
+	{
+		@include mq(0, 375px)
+		{
+			transform: translateX(-15px);
+			
+		}
 	}
 }
 

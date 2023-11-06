@@ -244,82 +244,71 @@
 	</div>
 	<div class="footer-tab__accordion">
 		<div class="footer-tab__container container">
-			<div class="accordion">
-				<div class="accordion__block">
-					<div class="accordion__section">
-						<button 
-						onclick="o2.footer.accordion()"
-						class="accordion__btn">
-							Покупателям
-
-							<div class="accordion__btn-img">
-								{% include '@assets/svg/arrow-accord.svg' %}
-							</div>
-
-						</button>
-						<ul class="accordion__list ">
-					<li class="accordion__item">
-						<a href="" class="accordion__link">
-							Наша&nbsp;почта
-						</a>
-					</li>
-					<li class="accordion__item">
-						<a href="" class="accordion__link">
-							Оплата&nbsp;и&nbsp;доставка
-						</a>
-					</li>
-					<li class="accordion__item">
-						<a href="" class="accordion__link">
-							Вопросы&nbsp;и&nbsp;ответы
-						</a>
-					</li>
-				</ul>
-
-					</div>
-					<div class="accordion__section">
-						<button class="accordion__btn">
-							Издательство
-
-							<div class="accordion__btn-img">
-								{% include '@assets/svg/arrow-accord.svg' %}
-							</div>
-
-						</button>
-
-					</div>
-				</div>
-				<div class="accordion__block">
-					<div class="accordion__section">
-						<button class="accordion__btn">
-							Книги
-
-							<div class="accordion__btn-img">
-								{% include '@assets/svg/arrow-accord.svg' %}
-							</div>
-
-						</button>
-
-					</div>
-					<div class="accordion__section accordion__section--decor ">
-						<button class="accordion__btn">
-							Прайс-лист
-
-							<div class="accordion__btn-img">
-								{% include '@assets/svg/arrow-accord.svg' %}
-							</div>
-
-						</button>
-
-					</div>
-				</div>
-
-			</div>
+			{% include '@blocks/g-accordion/g-accordion.twig' %}
 		</div>
 
 	</div>
 	<div class="footer-tab__body">
-		<div class="footer-tab__container container"></div>
-
+		<div class="footer-tab__body-section">
+			<div class="footer-tab__container container">
+			<ul class="footer-tab__list">
+				<li class="footer-tab__item">
+					<a href="#" class="footer-tab__link">
+						Политика конфиденциальности
+					</a>
+				</li>
+				<li class="footer-tab__item">
+					<a href="#" class="footer-tab__link">
+						Договор оферты
+					</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div class="footer-tab__body-section">
+			<div class="footer-tab__container container">
+				<ul class="footer-tab__body-list">
+					<li class="footer-tab__body-item">
+						<a href="tel:+79686606550" class="footer-tab__body-link">
+							{% include '@assets/svg/phone.svg' %}
+							8 (968) 660-65-50
+							{% include '@assets/svg/notification-i.svg' %}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="footer-tab__body-section">
+			<div class="footer-tab__container container">
+				<ul class="footer-tab__body-list">
+					<li class="footer-tab__body-item">
+						<a href="mailto:market@estatut.ru" class="footer-tab__body-link">
+							{% include '@assets/svg/mail.svg' %}
+							market@estatut.ru
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="footer-tab__body-section">
+			<div class="footer-tab__container container">
+				<ul class="footer-tab__body-list">
+					<li class="footer-tab__body-item">
+						<a href="#" class="footer-tab__body-link footer-tab__body-link--letter">
+							{% include '@assets/svg/location.svg' %}
+							ул. Лобачевского, 92, корп. 2 119454, г. Москва
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="footer-tab__body-section">
+			<div class="footer-tab__container container">
+			<p class="footer-tab__company-name">
+				© 2020 Издательство «Статут»
+			</p>
+			</div>
+		</div>	
 	</div>
 
 

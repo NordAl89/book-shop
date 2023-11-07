@@ -11,14 +11,14 @@
 	@include mq(0, 375px)
 	{
 		flex-direction: column;
-		
+
 	}
-	
+
 }
 
-.g-trading-conditions__article
+.g-trading-conditions__card
 {
-	display: flex;	
+	display: flex;
 	align-items: center;
 	width: 23%;
 	min-height: 150px;
@@ -41,9 +41,9 @@
 	@include mq(0, 375px)
 	{
 		width: 100%;
-		min-height: 170px;		
-		padding-left: 19px;	
-		padding-right: 15px;	
+		min-height: 170px;
+		padding-left: 19px;
+		padding-right: 15px;
 
 		&:nth-child(1)
 		{
@@ -53,17 +53,17 @@
 		&:nth-child(2)
 		{
 			order: 3;
-			
+
 		}
 		&:nth-child(3)
 		{
 			order: 1;
-			
+
 		}
 		&:nth-child(4)
 		{
 			order: 2;
-			
+
 		}
 	}
 
@@ -82,7 +82,7 @@
 	width: 60px;
 	overflow: unset;
 	margin-right: 16px;
-	& img 
+	& img
 	{
 		transform: translateX(-12px);
 
@@ -91,7 +91,7 @@
 		width: 132px;
 		height: 90px;
 	}
-		
+
 	}
 
 	@include mq(0, 375px)
@@ -101,8 +101,8 @@
 	}
 }
 
-//correct bag and card image for perfect
-.g-trading-conditions__article
+//correct bag and card image for perfect pixel
+.g-trading-conditions__card
 {
 	&:last-child img
 	{
@@ -116,15 +116,11 @@
 		@include mq(0, 375px)
 		{
 			transform: translateX(-15px);
-			
+
 		}
 	}
 }
 
-.g-trading-conditions__text
-{
-	// width: 159px;
-}
 
 .g-trading-conditions__title3
 {
@@ -139,7 +135,7 @@
 
 .g-trading-conditions__descr
 {
-	
+
 	color: #727272;
 	font-family: Roboto;
 	font-size: 12px;
@@ -151,7 +147,7 @@
 	@include mq(0, 375px)
 	{
 		color: rgba(28, 41, 77, 0.50);
-		font-size: 14px;		
-		line-height: 20px; 
+		font-size: 14px;
+		line-height: 20px;
 	}
 }

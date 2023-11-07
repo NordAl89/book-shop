@@ -1,37 +1,37 @@
 
-.hero 
+.hero
 {
 	display: grid;
-	grid-template-areas: 
+	grid-template-areas:
 	'a a a a a a b b b'
 	'c c c d d d b b b'
 	;
 	grid-template-columns: repeat(9, 1fr);
 	grid-template-rows: 25.7vw auto;
 	row-gap: 2.05vw;
-	column-gap: 2.05vw;	
+	column-gap: 2.05vw;
 
 	margin-bottom: 27px;
 
 	@include mq(769px, 1024px)
 	{
 		grid-template-rows: 28vw auto;
-		
+
 	}
 
 	@include mq(376px, 768px)
 	{
-		grid-template-areas: 
+		grid-template-areas:
 		'a a a a a a a a a'
 		'c c c c c c b b b'
 		'd d d d d d b b b'
 		;
 		grid-template-rows: auto auto auto;
-		
+
 	}
 	@include mq(0, 376px)
 	{
-		grid-template-areas: 
+		grid-template-areas:
 		'a'
 		'b'
 		'c'
@@ -40,11 +40,9 @@
 		grid-template-columns: 1f;
 		grid-template-rows: auto auto auto auto;
 		row-gap: 10px;
-		// margin-bottom: 8px;
-		
 	}
-	
-}  
+
+}
 
 .slider
 {
@@ -52,13 +50,11 @@
 	width: 55vw;
 	& .slider-temp {
 		width: 100%;
-		
-		
 	}
 
 	@include mq(768px, 1024px)
 	{
-		width: 60.8vw;		
+		width: 60.8vw;
 	}
 
 	@include mq(376px, 768px)
@@ -69,19 +65,19 @@
 	@include mq(0, 376px)
 	{
 		width: 100%;
-		
+
 	}
-	& img 
+	& img
 	{
 		@include mq(0, 376px)
 		{
 			height: 175px;
-		
+
 		}
 	}
 }
 
-.hero__article
+.hero__card
 {
 	width: 26.4vw;
 	padding: 20px;
@@ -107,7 +103,7 @@
 
 // =============== Daybook article ================
 
-.hero__article--decor1 {
+.hero__card--decor1 {
 	grid-area: b;
 
 	@include mq(376px, 768px)
@@ -122,7 +118,7 @@
 	}
 }
 
-.daybook__wrapper-top 
+.daybook__wrapper-top
 {
 	display: flex;
 	justify-content: space-between;
@@ -137,8 +133,6 @@
 		margin-bottom: 19px;
 	}
 
-	
-	
 	& .daybook__time-counter
 	{
 		width: 68px;
@@ -153,9 +147,9 @@
 		font-size: 12px;
 		font-style: normal;
 		font-weight: 500;
-		line-height: 15px; 
-	}	
-	
+		line-height: 15px;
+	}
+
 }
 
 .daybook__title3
@@ -166,7 +160,7 @@
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 20px; 
+	line-height: 20px;
 }
 
 .daybook__image {
@@ -187,7 +181,7 @@
 	}
 }
 
-.daybook__title4 
+.daybook__title4
 {
 	margin-bottom: 6px;
 	color: rgba(28, 41, 77, 0.50);
@@ -195,11 +189,11 @@
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 15px; 
+	line-height: 15px;
 	letter-spacing: .6px;
 }
 
-.daybook__descr 
+.daybook__descr
 {
 	margin-bottom: 9px;
 	color: #1C294D;
@@ -207,8 +201,7 @@
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 19px; 
-	
+	line-height: 19px;
 }
 
 .daybook__author
@@ -219,11 +212,10 @@
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 15px; 
-	
+	line-height: 15px;
 }
 
-.daybook__price 
+.daybook__price
 {
 	margin-bottom: 11px;
 	color: #1C294D;
@@ -231,11 +223,11 @@
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 20px; 
-	
+	line-height: 20px;
+
 }
 
-.daybook__wrapper-bottom 
+.daybook__wrapper-bottom
 {
 	display: flex;
 	align-items: center;
@@ -249,16 +241,14 @@
 		{
 			width: 71vw;
 		}
-		
 	}
-	
 }
 
 // ================= Delivery =============
-.hero__article--decor2
+.hero__card--decor2
 {
 	grid-area: c;
-	
+
 	padding: 18px 26px 15px 25px;
 	background: #6D378F;
 	@include mq(0, 376px)
@@ -268,9 +258,9 @@
 }
 
 
-.delivery 
+.delivery
 {
-	display: flex;	
+	display: flex;
 	align-items: center;
 
 	@include mq(768px, 1024px)
@@ -291,24 +281,25 @@
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 25px; 
+	line-height: 25px;
 }
-.delivery__text-decor 
+
+.delivery__text-decor
 {
 	position: relative;
 	z-index: 0;
-	
 
 	& svg
 	{
-		position: absolute;		
+		position: absolute;
 		left: -12px;
 		top: -2px;
 		z-index: -1;
 	}
 }
+
 // =============== Discounts ===============
-.hero__article--decor3
+.hero__card--decor3
 {
 	grid-area: d;
 	background: #FFD8EF;
@@ -318,12 +309,11 @@
 		{
 			padding: 18px 20px 14px 20px;
 		}
-	
 }
 
 .discounts
 {
-	display: flex;	
+	display: flex;
 	align-items: center;
 
 	@include mq(768px, 1024px)
@@ -344,17 +334,16 @@
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 25px; 
+	line-height: 25px;
 }
-.discounts__text-decor 
+.discounts__text-decor
 {
 	position: relative;
 	z-index: 0;
-	
 
 	& svg
 	{
-		position: absolute;		
+		position: absolute;
 		right: -12px;
 		top: -2px;
 		z-index: -1;
@@ -368,8 +357,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	// width: 83.5vw;
-	
 	margin-top: 0;
 	padding: 2.4vw 3.3vw 2.4vw 3.3vw;
 	border-radius: 5px;
@@ -383,7 +370,7 @@
 
 	@include mq(0, 375px)
 	{
-		
+
 		flex-wrap: wrap;
 		padding: 19px 10px 20px 10px;
 	}
@@ -411,12 +398,12 @@
 	}
 }
 
-.subscribe__discount 
+.subscribe__discount
 {
 	position: relative;
 	z-index: 0;
 
-	& svg 
+	& svg
 	{
 		position: absolute;
 		top: -3px;
@@ -430,7 +417,7 @@
 	display: flex;
 	justify-content: space-between;
 	min-height: 40px;
-	// width: 565px;	
+	// width: 565px;
 	width: 53.8%;
 	min-width: 400px;
 
@@ -444,7 +431,7 @@
 	}
 
 	@include mq(0, 375px)
-	{	
+	{
 		width: 95vw;
 		min-width: 300px;
 		min-height: 90px;
@@ -497,7 +484,7 @@
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 20px; 
+	line-height: 20px;
 
 	@include mq(0, 375px)
 	{

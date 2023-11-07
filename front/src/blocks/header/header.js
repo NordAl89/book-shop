@@ -7,17 +7,16 @@ o2.header = {
 		inputElement.placeholder = 'Что будем искать?';
 	  }
 	},
-  
+
 	init() {
 	  this.setPlaceholder(); // Set the initial placeholder value
-  
+
 	  // Add an event listener for window resize
 	  window.addEventListener('resize', () => {
 		this.setPlaceholder(); // Update the placeholder value on window resize
 	  });
 	}
   };
-  
+
   // Initialize the header functionality
-  o2.header.init();
-  
+  // o2.header.init();

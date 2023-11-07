@@ -147,8 +147,11 @@
 	letter-spacing: .7px;
 }
 
-.g-news__btn-body
+.g-news__link-body
 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 180px;
 	height: 40px;
 	border-radius: 5px;

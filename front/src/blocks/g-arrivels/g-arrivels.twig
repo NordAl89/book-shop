@@ -1,7 +1,7 @@
 <div class="g-arrivels">
 	<div class="g-arrivels__header">
 		<h2 class="g-arrivels__title2 _g-arrivels__title2">
-			Готовятся к выходу
+			{{ title }}
 		</h2>
 		<div class="g-arrivels__btn-wrapper">
 			{% include '@blocks/g-btn-arrows/g-btn-arrows.twig' %}
@@ -10,37 +10,37 @@
 
 	<div class="g-arrivels__body">
 
-		<article class="article-arrivels">
-			<div class="article-arrivels__content">
-				<div class="article-arrivels__image">
+		<div class="card-arrivels">
+			<div class="card-arrivels__content">
+				<div class="card-arrivels__image">
 					<img src="./img/north-south.jpg" alt="с севера на юг">
 
-					<p class="article-arrivels__lable-one">
+					<p class="card-arrivels__lable-one">
 						Бестселлер
 					</p>
-					<p class="article-arrivels__lable-two">
+					<p class="card-arrivels__lable-two">
 						1+1=3
 					</p>
 				</div>
-				<div class="article-arrivels__middle">
-					<h4 class="article-arrivels__title4">
+				<div class="card-arrivels__middle">
+					<h4 class="card-arrivels__title4">
 						Корпоративное право
 					</h4>
-					<p class="article-arrivels__descr">
+					<p class="card-arrivels__descr">
 						Инвестирование: способы, риски, субъекты : монография
 					</p>
-					<p class="article-arrivels__author">
+					<p class="card-arrivels__author">
 						Майфат А.В.
 					</p>
-					<p class="article-arrivels__price">
+					<p class="card-arrivels__price">
 						4 450 ₽
 					</p>
-					<div class="article-arrivels__ratings">
-						<p class="article-arrivels__stars">
+					<div class="card-arrivels__ratings">
+						<p class="card-arrivels__stars">
 							{% include '@assets/svg/Star-2.svg' %}
 							4.9
 						</p>
-						<p class="article-arrivels__recomends">
+						<p class="card-arrivels__recomends">
 							{% include '@assets/svg/like.svg' %}
 							89% рекомендуют
 						</p>
@@ -48,48 +48,47 @@
 					</div>
 				</div>
 
-				<div class="article-arrivels__bottom">
+				<div class="card-arrivels__bottom">
 					{% include '@blocks/g-btn-shopcart/g-btn-shopcart.twig' %}
 					{% include '@blocks/g-btn-defer/g-btn-defer.twig' %}
 				</div>
 			</div>
+		</div>
 
-
-		</article>
-		<article class="article-arrivels">
-			<div class="article-arrivels__content">
-				<div class="article-arrivels__image">
+		<div class="card-arrivels">
+			<div class="card-arrivels__content">
+				<div class="card-arrivels__image">
 					<img src="./img/maleev.jpg" alt="витя малеев в школе">
 
-					<p class="article-arrivels__lable-one hidden-staff">
+					<p class="card-arrivels__lable-one hidden-staff">
 						Бестселлер
 					</p>
-					<p class="article-arrivels__lable-two hidden-staff">
+					<p class="card-arrivels__lable-two hidden-staff">
 						1+1=3
 					</p>
-					<p class="article-arrivels__lable-three">
+					<p class="card-arrivels__lable-three">
 						Новинка
 					</p>
 				</div>
-				<div class="article-arrivels__middle">
-					<h4 class="article-arrivels__title4">
+				<div class="card-arrivels__middle">
+					<h4 class="card-arrivels__title4">
 						Договорное право
 					</h4>
-					<p class="article-arrivels__descr">
+					<p class="card-arrivels__descr">
 						Договор коммерческой концессии (франчайзинг). Граж...
 					</p>
-					<p class="article-arrivels__author">
+					<p class="card-arrivels__author">
 						Багдасарян А.Ф.
 					</p>
-					<p class="article-arrivels__price">
-						372 ₽ 
+					<p class="card-arrivels__price">
+						372 ₽
 					</p>
-					<div class="article-arrivels__ratings">
-						<p class="article-arrivels__stars">
+					<div class="card-arrivels__ratings">
+						<p class="card-arrivels__stars">
 							{% include '@assets/svg/Star-2.svg' %}
 							4.9
 						</p>
-						<p class="article-arrivels__recomends">
+						<p class="card-arrivels__recomends">
 							{% include '@assets/svg/like.svg' %}
 							89% рекомендуют
 						</p>
@@ -97,58 +96,57 @@
 					</div>
 				</div>
 
-				<div class="article-arrivels__bottom">
+				<div class="card-arrivels__bottom">
 					{% include '@blocks/g-btn-shopcart/g-btn-shopcart.twig' %}
 					{% include '@blocks/g-btn-defer/g-btn-defer.twig' %}
 				</div>
 			</div>
+		</div>
 
-
-		</article>
-		<article class="article-arrivels">
-			<div class="article-arrivels__content">
-				<div class="article-arrivels__image">
+		<div class="card-arrivels">
+			<div class="card-arrivels__content">
+				<div class="card-arrivels__image">
 					<img src="./img/bejin-field.jpg" alt="бежин луг">
 
-					<p class="article-arrivels__lable-one hidden-staff">
+					<p class="card-arrivels__lable-one hidden-staff">
 						Бестселлер
 					</p>
-					<p class="article-arrivels__lable-two hidden-staff">
+					<p class="card-arrivels__lable-two hidden-staff">
 						1+1=3
 					</p>
 				</div>
-				<div class="article-arrivels__middle">
-					<h4 class="article-arrivels__title4">
+				<div class="card-arrivels__middle">
+					<h4 class="card-arrivels__title4">
 						Конкурентное право
 					</h4>
-					<p class="article-arrivels__descr">
+					<p class="card-arrivels__descr">
 						Договор коммерческой концессии (франчайзинг). Граж...
 					</p>
-					<p class="article-arrivels__author">
+					<p class="card-arrivels__author">
 						Башлаков-Николаев И.В.
 					</p>
 
-					<div class="article-arrivels__price-discount">
-						<p class="article-arrivels__price article-arrivels__price--decor">
+					<div class="card-arrivels__price-discount">
+						<p class="card-arrivels__price card-arrivels__price--decor">
 							984&nbsp;₽
 						</p>
-						<p class="article-arrivels__price-old">
+						<p class="card-arrivels__price-old">
 							1&nbsp;284&nbsp;₽
 							{% include '@assets/svg/red-line.svg' %}
-							{# <span class="article-arrivels__crossed-price"></span> #}
+							{# <span class="card-arrivels__crossed-price"></span> #}
 						</p>
-						<p class="article-arrivels__profit">
+						<p class="card-arrivels__profit">
 							Выгода&nbsp;300&nbsp;₽
 						</p>
-					
+
 					</div>
-					
-					<div class="article-arrivels__ratings">
-						<p class="article-arrivels__stars">
+
+					<div class="card-arrivels__ratings">
+						<p class="card-arrivels__stars">
 							{% include '@assets/svg/Star-2.svg' %}
 							4.9
 						</p>
-						<p class="article-arrivels__recomends">
+						<p class="card-arrivels__recomends">
 							{% include '@assets/svg/like.svg' %}
 							89% рекомендуют
 						</p>
@@ -156,45 +154,44 @@
 					</div>
 				</div>
 
-				<div class="article-arrivels__bottom">
+				<div class="card-arrivels__bottom">
 					{% include '@blocks/g-btn-shopcart/g-btn-shopcart.twig' %}
 					{% include '@blocks/g-btn-defer/g-btn-defer.twig' %}
 				</div>
 			</div>
+		</div>
 
-
-		</article>
-		<article class="article-arrivels">
-			<div class="article-arrivels__content">
-				<div class="article-arrivels__image">
+		<div class="card-arrivels">
+			<div class="card-arrivels__content">
+				<div class="card-arrivels__image">
 					<img src="./img/north-south.jpg" alt="с севера на юг">
 
-					<p class="article-arrivels__lable-one">
+					<p class="card-arrivels__lable-one">
 						Бестселлер
 					</p>
-					<p class="article-arrivels__lable-two">
+					<p class="card-arrivels__lable-two">
 						1+1=3
 					</p>
 				</div>
-				<div class="article-arrivels__middle">
-					<h4 class="article-arrivels__title4">
+				<div class="card-arrivels__middle">
+					<h4 class="card-arrivels__title4">
 						Корпоративное право
 					</h4>
-					<p class="article-arrivels__descr">
+					<p class="card-arrivels__descr">
 						Инвестирование: способы, риски, субъекты : монография
 					</p>
-					<p class="article-arrivels__author">
+					<p class="card-arrivels__author">
 						Майфат А.В.
 					</p>
-					<p class="article-arrivels__price _article-arrivels__price">
-						450 ₽
+					<p class="card-arrivels__price">
+						4 450 ₽
 					</p>
-					<div class="article-arrivels__ratings">
-						<p class="article-arrivels__stars">
+					<div class="card-arrivels__ratings">
+						<p class="card-arrivels__stars">
 							{% include '@assets/svg/Star-2.svg' %}
 							4.9
 						</p>
-						<p class="article-arrivels__recomends">
+						<p class="card-arrivels__recomends">
 							{% include '@assets/svg/like.svg' %}
 							89% рекомендуют
 						</p>
@@ -202,14 +199,12 @@
 					</div>
 				</div>
 
-				<div class="article-arrivels__bottom">
+				<div class="card-arrivels__bottom">
 					{% include '@blocks/g-btn-shopcart/g-btn-shopcart.twig' %}
 					{% include '@blocks/g-btn-defer/g-btn-defer.twig' %}
 				</div>
 			</div>
-
-
-		</article>
+		</div>
 
 	</div>
 

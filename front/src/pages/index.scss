@@ -48,9 +48,7 @@
 {
 	grid-area: a;
 	width: 55vw;
-	& .slider-temp {
-		width: 100%;
-	}
+	
 
 	@include mq(768px, 1024px)
 	{
@@ -60,6 +58,7 @@
 	@include mq(376px, 768px)
 	{
 		width: 100%;
+		height: auto;
 	}
 
 	@include mq(0, 376px)

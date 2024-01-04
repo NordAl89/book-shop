@@ -32,6 +32,7 @@ import '@b/g-arrivels/g-arrivels.js';
 import '@b/g-news/g-news.js';
 import '@b/footer/footer.js';
 import '@b/g-accordion/g-accordion.js';
+import '@b/g-slider/g-slider.js';
 
 /* ====================#1ef Blocks #1ef==================== */
 

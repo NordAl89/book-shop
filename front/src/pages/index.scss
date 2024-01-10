@@ -48,7 +48,6 @@
 {
 	grid-area: a;
 	width: 55vw;
-	
 
 	@include mq(768px, 1024px)
 	{
@@ -472,9 +471,11 @@
 
 .subsribe__form-btn
 {
+
 	// width: 137px;
 	width: 24.2%;
 	min-width: 100px;
+	background: #0288D1;
 	border: 2px solid $base-first;
 	border-radius: 5px;
 	padding: 0 5px;

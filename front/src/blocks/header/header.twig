@@ -59,7 +59,6 @@
 	</div>
 	<div class="container">
 
-
 		<div class="header__middle">
 			<div class="header__logo-form-wrapper">
 				<div class="tablet-screen tablet-screen-burger">
@@ -69,12 +68,16 @@
 					{% include '@assets/svg/statut-logo.svg' %}
 				</div>
 
-				<form class='form' action="">
-					<input class='form__input _inputHeader' type="text" placeholder='Автор, название, ISBN'>
-					<button class='form__button'>
+				<form class='form'>
+					<lable class="g-input _field"
+
+					 for="inputHeader"></lable>
+					<input id='inputHeader' class='form__input g-input__input _inputHeader' type="text" placeholder='Автор, название, ISBN'>
+					<div class="g-input__sub _error-msg">Error: invalid name</div>
+					<button
+					 type="submit" class='form__button g-button'>
 						{% include '@assets/svg/magnifire.svg' %}
 						Искать</button>
-
 				</form>
 				<div class='tablet-screen tablet-screen-shopcart'>
 					{% include '@blocks/g-shopcart/g-shopcart.twig' %}
@@ -170,6 +173,5 @@
 				</ul>
 			</nav>
 		</div>
-
 	</div>
 </header>

@@ -20,3 +20,30 @@ o2.header = {
 
   // Initialize the header functionality
   // o2.header.init();
+
+o2.form2 = {
+  submit(e) {
+e.preventDefault()
+    let params = {
+      url: process.env.APP_URL + 'requests/request.json',
+      method: 'GET',
+      dataType: 'json',
+      success: (msg, instance) => {
+        console.log(msg, instance);
+      }
+    };
+
+    // Pass the form element to O2Validator.handleSubmit
+    O2Validator.handleSubmit(e.target, params, true, true, this.callbacks);
+  },
+  callbacks: {
+    test(field) {
+      let $input = field.find('input');
+
+      if ($input.val() === 'test') return true;
+
+      O2Validator.setMessage(field, 'Test');
+      return false;
+    }
+  },
+};

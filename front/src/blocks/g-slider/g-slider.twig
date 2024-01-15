@@ -1,20 +1,65 @@
 <div class="g-slider">
 	<div class="g-slider__board _g-slider__board">
-		<img src="./img/slider_pic1.jpg" alt="слайдер изображение один" class="g-slider__image _g-slider__image">
-		<img src="./img/slider_pic2.jpg" alt="слайдер изображение два" class="g-slider__image _g-slider__image">
-		<img src="./img/slider_pic3.jpg" alt="слайдер изображение три" class="g-slider__image _g-slider__image">
-		<img src="./img/slider_pic4.jpg" alt="слайдер изображение четыре" class="g-slider__image _g-slider__image">
+		<div class="g-slider__imgWrap">
+			<img
+				src="./img/owl_1.jpg"
+				alt="слайдер изображение один"
+				class="g-slider__image _g-slider__image"
+			>
+		</div>
+		<div class="g-slider__imgWrap">
+			<img
+				src="./img/owl_2.jpg"
+				alt="слайдер изображение два"
+				class="g-slider__image _g-slider__image"
+			>
+		</div>
+		<div class="g-slider__imgWrap">
+			<img
+				src="./img/owl_3.jpg"
+				alt="слайдер изображение три"
+				class="g-slider__image _g-slider__image"
+			>
+		</div>
+		<div class="g-slider__imgWrap">
+			<img
+				src="./img/owl_4.jpg"
+				alt="слайдер изображение четыре"
+				class="g-slider__image _g-slider__image"
+			>
+		</div>
+
 	</div>
-	<button onclick="o2.gSlider.prev(this)" class="g-slider__button g-slider__button--left">
-					{% include '@assets/svg/arrow_slider.svg' %}
+	<button
+		onclick="o2.gSlider.prev(this)"
+		class="g-slider__button g-slider__button--left">
+			{% include '@assets/svg/arrow_slider.svg' %}
 	</button>
-	<button onclick="o2.gSlider.next(this)" class="g-slider__button g-slider__button--right">
-					{% include '@assets/svg/arrow_slider.svg' %}
+	<button
+		onclick="o2.gSlider.next(this)"
+		class="g-slider__button g-slider__button--right">
+			{% include '@assets/svg/arrow_slider.svg' %}
 	</button>
-	<div class="g-slider__detectors">
-		<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="0"></div>
-		<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="1"></div>
-		<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="2"></div>
-		<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="3"></div>
+	<div
+		class="g-slider__detectors _g-slider__detectors">
+			<div
+				onclick="o2.gSlider.detector(this)"
+				class="g-slider__detector" data-num="0">
+			</div>
+			<div
+				onclick="o2.gSlider.detector(this)"
+				class="g-slider__detector"
+				data-num="1">
+			</div>
+			<div
+				onclick="o2.gSlider.detector(this)"
+				class="g-slider__detector"
+				data-num="2">
+			</div>
+			<div
+				onclick="o2.gSlider.detector(this)"
+				class="g-slider__detector"
+				data-num="3">
+			</div>
 	</div>
 </div>

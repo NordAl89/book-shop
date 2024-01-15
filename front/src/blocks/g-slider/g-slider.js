@@ -83,13 +83,6 @@ o2.gSlider = {
 		this.imageNumber = imageNum;
 		this.imgBoard.style.transform = `translateX(${this.sliderStep}px)`;
 
-		if(this.imageNumber == 0 || this.imageNumber == 3){
-			this.imgBoard.style.transition = "transform 0s ease-in-out";
-		}
-
-		let setTimeoutId = setTimeout(() => {
-        this.imgBoard.style.transition = "transform .7s ease-in-out";
-    },0);
 	  this.detectorHighlight()
   },
 

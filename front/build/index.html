@@ -12,7 +12,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport min-width=320px" content="min-width=320, initial-scale=1.0" />
 		<!--[if lt IE 9]>
-	
+
 		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
 	<![endif]-->
 		<title>index</title>
@@ -109,7 +109,6 @@
 			</div>
 			<div class="container">
 
-
 				<div class="header__middle">
 					<div class="header__logo-form-wrapper">
 						<div class="tablet-screen tablet-screen-burger">
@@ -132,9 +131,11 @@
 
 						</div>
 
-						<form class='form' action="">
-							<input class='form__input _inputHeader' type="text" placeholder='Автор, название, ISBN'>
-							<button class='form__button'>
+						<form class='form'>
+							<lable class="g-input _field" for="inputHeader"></lable>
+							<input id='inputHeader' class='form__input g-input__input _inputHeader' type="text" placeholder='Автор, название, ISBN'>
+							<div class="g-input__sub _error-msg">Error: invalid name</div>
+							<button type="submit" class='form__button g-button'>
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g id="Interface/Interface 52 - 24px">
 										<path id="Icon" fill-rule="evenodd" clip-rule="evenodd" d="M1.66671 7.91699C1.66671 11.3688 4.46493 14.167 7.91671 14.167C9.35974 14.167 10.6885 13.6779 11.7464 12.8566C11.7863 12.9409 11.8411 13.0199 11.9108 13.0896L16.9108 18.0896C17.2362 18.415 17.7639 18.415 18.0893 18.0896C18.4147 17.7641 18.4147 17.2365 18.0893 16.9111L13.0893 11.9111C13.0196 11.8414 12.9406 11.7866 12.8563 11.7467C13.6777 10.6888 14.1667 9.36002 14.1667 7.91699C14.1667 4.46521 11.3685 1.66699 7.91671 1.66699C4.46493 1.66699 1.66671 4.46521 1.66671 7.91699ZM3.33337 7.91699C3.33337 5.38569 5.3854 3.33366 7.91671 3.33366C10.448 3.33366 12.5 5.38569 12.5 7.91699C12.5 10.4483 10.448 12.5003 7.91671 12.5003C5.3854 12.5003 3.33337 10.4483 3.33337 7.91699Z" fill="white" />
@@ -142,7 +143,6 @@
 								</svg>
 
 								Искать</button>
-
 						</form>
 						<div class='tablet-screen tablet-screen-shopcart'>
 							<div class="g-shopcart">
@@ -275,7 +275,6 @@
 						</ul>
 					</nav>
 				</div>
-
 			</div>
 		</header>
 
@@ -288,10 +287,19 @@
 						<div class="slider">
 							<div class="g-slider">
 								<div class="g-slider__board _g-slider__board">
-									<img class="_g-slider__image" src="../img/slider_pic1.jpg" alt="слайдер изображение один" class="g-slider__image">
-									<img class="_g-slider__image" src="../img/slider_pic2.jpg" alt="слайдер изображение два" class="g-slider__image">
-									<img class="_g-slider__image" src="../img/slider_pic3.jpg" alt="слайдер изображение три" class="g-slider__image">
-									<img class="_g-slider__image" src="../img/slider_pic4.jpg" alt="слайдер изображение четыре" class="g-slider__image">
+									<div class="g-slider__imgWrap">
+										<img src="./img/owl_1.jpg" alt="слайдер изображение один" class="g-slider__image _g-slider__image">
+									</div>
+									<div class="g-slider__imgWrap">
+										<img src="./img/owl_2.jpg" alt="слайдер изображение два" class="g-slider__image _g-slider__image">
+									</div>
+									<div class="g-slider__imgWrap">
+										<img src="./img/owl_3.jpg" alt="слайдер изображение три" class="g-slider__image _g-slider__image">
+									</div>
+									<div class="g-slider__imgWrap">
+										<img src="./img/owl_4.jpg" alt="слайдер изображение четыре" class="g-slider__image _g-slider__image">
+									</div>
+
 								</div>
 								<button onclick="o2.gSlider.prev(this)" class="g-slider__button g-slider__button--left">
 									<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,11 +313,15 @@
 									</svg>
 
 								</button>
-								<div class="g-slider__detectors">
-									<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="0"></div>
-									<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="1"></div>
-									<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="2"></div>
-									<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="3"></div>
+								<div class="g-slider__detectors _g-slider__detectors">
+									<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="0">
+									</div>
+									<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="1">
+									</div>
+									<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="2">
+									</div>
+									<div onclick="o2.gSlider.detector(this)" class="g-slider__detector" data-num="3">
+									</div>
 								</div>
 							</div>
 						</div>
@@ -754,9 +766,9 @@
 					<section class='section arrivels'>
 						<div class="g-arrivels">
 							<div class="g-arrivels__header">
-								<h2 class="g-arrivels__title2 _g-arrivels__title2">
+								<h3 class="g-arrivels__title3 _g-arrivels__title3">
 									Новые поступления
-								</h2>
+								</h3>
 								<div class="g-arrivels__btn-wrapper">
 									<div class="g-btn-arrows">
 										<button class="g-btn-arrows__prev">
@@ -1111,19 +1123,19 @@
 							подписке на&nbsp;рассылку Издательства
 						</p>
 
-						<form action="" class="subscribe__form">
-							<input type="text" class="subscribe__form-input" placeholder='Введите ваш Email'>
-							<button class="subsribe__form-btn">
-								Подписаться
-							</button>
+						<form onsubmit="o2.form.submit(event)" class="subscribe__form">
+							<lable class="g-input _field" for="subscribe__form"></lable>
+							<input type="text" id="subscribe__form" class="subscribe__form-input form__input" placeholder='Введите ваш Email' data-code="email" name="email">
+							<input type="submit" class="subsribe__form-btn g-button" value="Подписаться">
+							</input>
 						</form>
 					</section>
 					<section class='section releases'>
 						<div class="g-arrivels">
 							<div class="g-arrivels__header">
-								<h2 class="g-arrivels__title2 _g-arrivels__title2">
+								<h3 class="g-arrivels__title3 _g-arrivels__title3">
 									Готовятся к выходу
-								</h2>
+								</h3>
 								<div class="g-arrivels__btn-wrapper">
 									<div class="g-btn-arrows">
 										<button class="g-btn-arrows__prev">
@@ -1656,8 +1668,9 @@
 
 						</div>
 						<form action="#" class="footer__header-form">
-							<input class="footer__header-input" placeholder='Введите свой Email и получите скидку'>
-
+							<lable class="g-input _field">
+								<input class="footer__header-input" placeholder='Введите свой Email и получите скидку'>
+							</lable>
 							<button class="footer__header-btn">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g id="Icons/20x20/White/Send r:15">

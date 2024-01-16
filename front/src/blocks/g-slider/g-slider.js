@@ -1,6 +1,7 @@
 o2.gSlider = {
   sliderStep: 0,
   imageNumber: 0,
+  pictursCollect: document.querySelectorAll('._g-slider__image'),
   //i will translateX this imgBoard
   imgBoard: document.querySelector("._g-slider__board"),
   deterctors: document.querySelector("._g-slider__detectors"),
@@ -27,15 +28,17 @@ o2.gSlider = {
 	  	}
   },
 
-  init(){
+  initSlider(){
   	this.detectorHighlight()
   },
 
   next(){
 
+  	let pictColLength = this.pictursCollect.length - 1;
 		let imageWidth = this.imgWidthCulculater();
+		console.log(pictColLength)
 
-		if (this.imageNumber < 3){
+		if (this.imageNumber < pictColLength){
 			this.imageNumber += 1;
 			this.sliderStep = -imageWidth*this.imageNumber;
 		}else {
@@ -57,6 +60,7 @@ o2.gSlider = {
 
   prev(){
 
+  	let pictColLength = this.pictursCollect.length - 1;
 		let imageWidth = this.imgWidthCulculater();
 
 		if (this.imageNumber > 0){
@@ -64,8 +68,8 @@ o2.gSlider = {
 			this.sliderStep = -imageWidth*this.imageNumber;
 		}else {
 			this.imgBoard.style.transition = "transform 0s ease-in-out";
-			this.imageNumber = 3;
-			this.sliderStep = -imageWidth*3;
+			this.imageNumber = pictColLength;
+			this.sliderStep = -imageWidth*pictColLength;
 		}
 		this.imgBoard.style.transform = `translateX(${this.sliderStep}px)`;
 
@@ -88,6 +92,3 @@ o2.gSlider = {
 
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  o2.gSlider.init();
-});

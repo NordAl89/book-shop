@@ -18,6 +18,7 @@ window.o2 =
 	init(): void
 	{
 		o2.header.init();
+		o2.gSlider.initSlider();
 	},
 	/**
 	* отслеживание клика вне блока
